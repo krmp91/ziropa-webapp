@@ -10,7 +10,7 @@ import AboutPage from "./pages/AboutPage";
 import LoginPage from "./pages/LoginPage";
 import Nav from "./components/Nav";
 
-function App() {
+/*function App() {
   return (
     <>
       <Nav />
@@ -28,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/
