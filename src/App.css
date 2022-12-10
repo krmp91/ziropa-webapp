@@ -1,44 +1,46 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
-header{
+/*header {
   background-color: grey;
   height: 200px;
 }
 
-
-.logo{
-  height: 150px;
+.logo img {
+  height: 50%;
   float: left;
-  margin-left: 20px;
-  margin-top: 20px;
-}
+  /*margin-left: 20px;
+  margin-top: 20px;*/
 
-nav {
+/*nav {
   overflow: hidden;
   display: flex;
   float: right;
   line-height: 150px;
 }
 
-nav a {
+/*nav a { 
   float: left;
   font-size: 25px;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
+} */
 
-
-a {
+/*a {
   text-decoration: none;
   color: black;
   margin-right: 10px;
-}
+}*/
 
-.login{
+.login {
   float: right;
   position: relative;
   bottom: 75px;
