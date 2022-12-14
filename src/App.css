@@ -51,4 +51,87 @@
   height: auto;
   left: 0px;
   right: 0px;
+  position: relative;
+  bottom: 120px;
 }
+.backgroundHome1{
+  max-width: 100%;
+  height: auto;
+  left: 0px;
+  right: 0px;
+ 
+}
+
+
+
+ .h1produkt{
+  font-size: 50px;
+    color: white;
+    text-align: center;
+    position: absolute;
+   
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.slideshow {
+  position: relative;
+}
+
+.mainImg {
+  transition: all 500ms;
+  max-width: 100%;
+  height: 600px;
+ 
+  left: 0px;
+  right: 0px;
+}
+
+.actions {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  background: #0000003d;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  padding-top: 10px;
+  margin: 5px;
+  border-radius: 15px;
+  padding-top: 5px;
+  font-size: 30px;
+}
+
+.actions button:active {
+  background: #000000a2;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  padding-top: 10px;
+  margin: 5px;
+  border-radius: 15px;
+  padding-top: 5px;
+}
+
+.slide{
+  max-width: 100%;
+  height: auto;
+  left: 0px;
+  right: 0px;
+ 
+}
+
+
+
