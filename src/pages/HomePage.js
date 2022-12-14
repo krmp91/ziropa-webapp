@@ -67,7 +67,7 @@ export default function HomePage() {
 
 
 
-  <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20 }}>
+  <div style={{ display: "grid", gridTemplateColumns: "25% 50% 25%", gridGap: 20 }}>
     <div>
      
       <h1 className='h1produkt'> Produkter</h1>
