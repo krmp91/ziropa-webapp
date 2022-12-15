@@ -1,9 +1,11 @@
+import { Box } from "@mui/system";
 import React from "react";
+import DisplayHome from "../components/DisplayHome";
 
 export default function HomePage() {
   return (
-    <div className="home">
-      <h1>This is ziropa 2.0</h1>
-    </div>
+    <Box>
+      <DisplayHome />
+    </Box>
   );
 }
