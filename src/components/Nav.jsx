@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import logo from "../assets/logo.png";
+import logo from "../components/assets/logo.png";
 import { Grid, Tabs, Tab, useTheme, useMediaQuery } from "@mui/material";
 import { BiUser } from "react-icons/bi";
 import DrawerMenu from "./DrawerMenu";
