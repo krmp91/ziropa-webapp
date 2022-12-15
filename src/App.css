@@ -53,6 +53,7 @@
   right: 0px;
   position: relative;
   bottom: 120px;
+  z-index: -1;
 }
 .backgroundHome1{
   max-width: 100%;

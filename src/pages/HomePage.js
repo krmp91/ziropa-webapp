@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import { Box } from "@mui/system";
-import React from "react";
-import DisplayHome from "../components/DisplayHome";
-
-export default function HomePage() {
-  return (
-    <Box>
-      <DisplayHome />
-    </Box>
-=======
 import React, { useState, useEffect } from 'react';
 import { Component } from "react";
 import  packageInfo from "../components/assets/orangecocktail1.jpg";
@@ -78,7 +67,7 @@ export default function HomePage() {
 
 
 
-  <div style={{ display: "grid", gridTemplateColumns: "24% 49% 24% auto", gridGap: 20 }}>
+  <div style={{ display: "grid", gridTemplateColumns: "25% 50% 25%", gridGap: 20 }}>
     <div>
      
       <h1 className='h1produkt'> Produkter</h1>
@@ -116,6 +105,5 @@ export default function HomePage() {
     </html>
 
 
->>>>>>> 141e03c58196e3dda880c21e69d8c8d081e8000e
   );
 }
