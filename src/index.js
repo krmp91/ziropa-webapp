@@ -4,23 +4,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
-import {
-  RouterProvider,
-  Route,
-  Link,
-  Outlet,
-  createBrowserRouter,
-} from "react-router-dom";
-import Nav from "./components/Nav";
-import HomePage from "./pages/HomePage";
-import ProductsPage from "./pages/ProductsPage";
-import NewsPage from "./pages/NewsPage";
-import EventsPage from "./pages/EventsPage";
-import RecipePage from "./pages/RecipePage";
-import AboutPage from "./pages/AboutPage";
-import LoginPage from "./pages/LoginPage";
-import Contact from "./components/Contact";
-import ErrorPage from "./pages/ErrorPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
