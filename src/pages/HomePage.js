@@ -6,6 +6,7 @@ import  packageInfo2 from "../components/assets/imgprodukter1.JPG";
 import  slideinfo1 from "../components/assets/slide1.jpeg";
 import  slideinfo2 from "../components/assets/slide2.jpeg";
 import  slideinfo3 from "../components/assets/slide3.JPG";
+import { Link } from 'react-router-dom';
 
 const Thumbnail = ({ arr, image, index }) => {
   return (<div className="tumbnail">
@@ -67,16 +68,16 @@ export default function HomePage() {
 
 
 
-  <div style={{ display: "grid", gridTemplateColumns: "24% 49% 24%", gridGap: 20 }}>
+  <div style={{ display: "grid", gridTemplateColumns: "24% 49% 24%", gridGap:  20 }}>
     <div>
-     
+    <Link to="/products">
       <h1 className='h1produkt'> Produkter</h1>
       <img className="backgroundHome1" src={packageInfo2}></img>
-     
-     
+      </Link>
+      <Link to="/inspiration">
       <h1 className='h1produkt'> Inspiration</h1>
       <img className="backgroundHome1" src={packageInfo1} ></img>
-      
+      </Link>
     </div>
 
 {/* column mid */}
