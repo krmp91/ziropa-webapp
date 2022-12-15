@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+import { Box } from "@mui/system";
+import React from "react";
+import DisplayHome from "../components/DisplayHome";
+
+export default function HomePage() {
+  return (
+    <Box>
+      <DisplayHome />
+    </Box>
+=======
 import React, { useState, useEffect } from 'react';
 import { Component } from "react";
 import  packageInfo from "../components/assets/orangecocktail1.jpg";
@@ -105,5 +116,6 @@ export default function HomePage() {
     </html>
 
 
+>>>>>>> 141e03c58196e3dda880c21e69d8c8d081e8000e
   );
 }
