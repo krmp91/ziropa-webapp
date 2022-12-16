@@ -10,6 +10,18 @@ import { Link } from "react-router-dom";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/captioned.css";
+import Footer from 'rc-footer';
+import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
+import { GoLocation } from 'react-icons/go';
+import { BsFacebook } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
+import { AiOutlineMail } from 'react-icons/ai';
+import { AiOutlinePhone } from 'react-icons/ai';
+import { style } from "@mui/system";
+
+
+
+
 
 const buttonStyle = {
   padding: "15px",
@@ -30,7 +42,9 @@ const bgImg = {
   width: "100%"
 };
 
-
+const fot = {
+  fontSize: "20px"
+};
 
 export default function HomePage() {
   return (
@@ -111,6 +125,53 @@ export default function HomePage() {
           <div>Column 3</div>
         </div>
       </div>
+
+      <Footer 
+style={fot}
+    columns={[
+      
+      {
+        
+        title: 'Kontakt os',
+        items: [
+          {
+            icon: <GoLocation/>,
+            title: 'Universitetsbyen 14, 8000 Aarhus',
+            openExternal: true,
+          },
+          {
+            icon: <AiOutlineMail/>,
+            title: 'info@ziropasirup.dk',
+            openExternal: true,
+          },
+          {
+            icon: <AiOutlinePhone/>,
+            title: '+4529130223',
+          },
+        ],
+      },
+      {
+        title: 'Følg os',
+        items: [
+          {
+            icon: <BsFacebook/>, 
+            title:"Facebook",
+            url: 'https://www.facebook.com/ziropasirup',
+            openExternal: true,
+          },
+          {
+            icon:<BsInstagram/>,
+            title: 'Instagram',
+            url: 'https://mobile.ant.design/',
+            openExternal: true,
+          }
+         
+        ],
+      },
+      
+    ]}
+    bottom="Made with ❤️ by AFX"
+  />
 
 
     </html>
