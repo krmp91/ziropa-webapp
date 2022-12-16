@@ -7,6 +7,29 @@ import  slideinfo1 from "../components/assets/slide1.jpeg";
 import  slideinfo2 from "../components/assets/slide2.jpeg";
 import  slideinfo3 from "../components/assets/slide3.JPG";
 import { Link } from "react-router-dom";
+import AwesomeSlider from "react-awesome-slider";
+import "react-awesome-slider/dist/styles.css";
+import "react-awesome-slider/dist/styles.css";
+import "react-awesome-slider/dist/captioned.css";
+
+const buttonStyle = {
+  padding: "15px",
+  borderRadius: "50%",
+  background: "red",
+  opacity: 0.7,
+  fontSize: "20px"
+};
+const contentStyle = {
+  color: "black",
+  fontSize: "20px"
+};
+const bgImg = {
+  position: "absolute",
+  zIndex: -1,
+  left: 0,
+  top: 0,
+  width: "100%"
+};
 
 const Thumbnail = ({ arr, image, index }) => {
   return (
@@ -80,18 +103,52 @@ export default function HomePage() {
 
           {/* column mid */}
           <div>
-            {" "}
-            <div className="App">
-              <Slideshow
-                className="slide"
-                imgs={[slideinfo1, slideinfo2, slideinfo3]}
-              />
-            </div>
+            
+          <AwesomeSlider
+      organicArrows={false}
+      buttonContentRight={<p style={buttonStyle}>{">"}</p>}
+      buttonContentLeft={<p style={buttonStyle}>{"<"}</p>}
+      play
+      // customContent={<p style={contentStyle}>{"I am the content/text"}</p>}
+      cancelOnInteraction={false} // should stop playing on user interaction
+      interval={6000}
+    >
+      <div style={{ zIndex: 2 }}>
+        <div>
+          <img
+            style={bgImg}
+            alt="Wow"
+            src={slideinfo1}
+          />
+          <h1>Microsoft</h1>
+          <h2>Nice to see you</h2>
+          <button> Click Me </button>
+        </div>
+      </div>
+
+      <div style={{ zIndex: 2 }}>
+        <div>
+          <img
+            style={bgImg}
+            alt="Wow"
+            src={slideinfo2}
+          />
+          <h1>Microsoft</h1>
+          <h2>Nice to see you</h2>
+          <button> Click Me </button>
+        </div>
+      </div>
+      
+    </AwesomeSlider>
           </div>
 
           <div>Column 3</div>
         </div>
       </div>
+
+
+      
+   
     </html>
 
 
