@@ -9,7 +9,6 @@ import  slideinfo3 from "../components/assets/slide3.JPG";
 import { Link } from "react-router-dom";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
-import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/captioned.css";
 
 const buttonStyle = {
@@ -56,7 +55,8 @@ export default function HomePage() {
           {/* column mid */}
           <div>
             
-          <AwesomeSlider
+          <AwesomeSlider 
+     
       organicArrows={false}
       buttonContentRight={<p style={buttonStyle}>{">"}</p>}
       buttonContentLeft={<p style={buttonStyle}>{"<"}</p>}
@@ -90,6 +90,20 @@ export default function HomePage() {
           <button> Click Me </button>
         </div>
       </div>
+
+      <div style={{ zIndex: 2 }}>
+        <div>
+          <img
+            style={bgImg}
+            alt="Wow"
+            src={slideinfo3}
+          />
+          <h1>Microsoft</h1>
+          <h2>Nice to see you</h2>
+          <button> Click Me </button>
+        </div>
+      </div>
+      
       
     </AwesomeSlider>
           </div>
@@ -99,8 +113,6 @@ export default function HomePage() {
       </div>
 
 
-      
-   
     </html>
 
 
