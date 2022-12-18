@@ -17,8 +17,8 @@ const LoginPage = () => {
         <Typography variant="h5" color="initial">
           Admin Panal
         </Typography>
-        <h2>Name : {user.displayName}</h2>
-        <h2>Email : {user.email}</h2>
+        <Typography variant="h6">Name : {user.displayName}</Typography>
+        <Typography variant="h6">Email : {user.email}</Typography>
       </Box>
       <LoginNav />
     </Box>
