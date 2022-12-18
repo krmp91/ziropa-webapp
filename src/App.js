@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import LoginPage from "./pages/LoginPage";
 import ErrorPage from "./pages/ErrorPage";
 import Nav from "./components/Nav";
+import UserPage from "./pages/UserPage";
 
 /*"Hjem",
   "Produkter",
@@ -33,6 +34,7 @@ function App() {
           <Route path="/inspiration" element={<RecipePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/user" element={<UserPage />} />
         </Route>
       </Routes>
     </>
