@@ -10,7 +10,8 @@ import Contact from "./components/Contact";
 import LoginPage from "./pages/LoginPage";
 import ErrorPage from "./pages/ErrorPage";
 import Nav from "./components/Nav";
-import UserPage from "./pages/UserPage";
+import UserInspiration from "./pages/UserInspiration";
+import UserProducts from "./pages/UserProducts";
 
 /*"Hjem",
   "Produkter",
@@ -34,7 +35,8 @@ function App() {
           <Route path="/inspiration" element={<RecipePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/user" element={<UserPage />} />
+          <Route path="/addInspiration" element={<UserInspiration />} />
+          <Route path="/addProducts" element={<UserProducts />} />
         </Route>
       </Routes>
     </>

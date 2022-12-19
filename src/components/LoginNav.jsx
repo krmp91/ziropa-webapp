@@ -45,7 +45,7 @@ export default function LoginNav() {
               >
                 <Button
                   component={Link}
-                  to="/login"
+                  to="/addProducts"
                   variant="contained"
                   size="small"
                   sx={{
@@ -60,7 +60,7 @@ export default function LoginNav() {
                 </Button>
                 <Button
                   component={Link}
-                  to="/login"
+                  to="/addInspiration"
                   variant="contained"
                   size="small"
                   sx={{
@@ -126,7 +126,7 @@ export default function LoginNav() {
                     }}
                     label="Produkter"
                     component={Link}
-                    to="/products"
+                    to="/addProducts"
                     value="/products"
                   />
 
@@ -136,7 +136,7 @@ export default function LoginNav() {
                     }}
                     label="Inspiration"
                     component={Link}
-                    to="/inspiration"
+                    to="/addInspiration"
                     value="/inspiration"
                   />
                 </Tabs>
