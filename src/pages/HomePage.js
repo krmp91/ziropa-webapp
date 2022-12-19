@@ -100,7 +100,7 @@ export default function HomePage() {
                   <img style={bgImg} alt="Wow" src={slideinfo1} />
                   <h1>Microsoft</h1>
                   <h2>Nice to see you</h2>
-                  <button> Click Me </button>
+                  <button className="button-56"> Click Me </button>
                 </div>
               </div>
 
@@ -109,7 +109,7 @@ export default function HomePage() {
                   <img style={bgImg} alt="Wow" src={slideinfo2} />
                   <h1>Microsoft</h1>
                   <h2>Nice to see you</h2>
-                  <button> Click Me </button>
+                  <button className="button-56"> Click Me </button>
                 </div>
               </div>
 
@@ -118,7 +118,7 @@ export default function HomePage() {
                   <img style={bgImg} alt="Wow" src={slideinfo3} />
                   <h1>Microsoft</h1>
                   <h2>Nice to see you</h2>
-                  <button> Click Me </button>
+                  <button className="button-56"> Click Me </button>
                 </div>
               </div>
             </AwesomeSlider>
