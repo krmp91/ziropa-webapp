@@ -4,19 +4,19 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import logo from "../components/assets/logo.png";
 import { Grid, Tabs, Tab, useTheme, useMediaQuery } from "@mui/material";
-import { BiUser } from "react-icons/bi";
-import DrawerMenu from "./DrawerMenu";
 import { Link } from "react-router-dom";
 import "./Nav.css";
+import { useUserContext } from "../context/userContext";
 
-export default function Nav() {
+export default function LoginNav() {
   const [value, setValue] = useState();
   const themeScreen = useTheme();
   console.log(themeScreen);
   const isMatch = useMediaQuery(themeScreen.breakpoints.down("md"));
   console.log(isMatch);
+
+  const { logoutUser } = useUserContext();
 
   return (
     <>
@@ -24,67 +24,84 @@ export default function Nav() {
         sx={{
           position: "static",
           background: "rgba(95,71,49,0.6183648459383753)",
-          height: "6.5em",
+          height: "4.5em",
           justifyContent: "center",
+          maxWidth: "100%",
+          boxShadow: "none",
         }}
       >
         <Toolbar>
           {isMatch ? (
             <>
               <Box
+                flexGrow={1}
                 sx={{
-                  width: "100%",
+                  maxWidth: "100%",
                   display: "flex",
-                  justifyContent: "space-between",
+                  justifyContent: "space-evenly",
                   placeItems: "center",
                 }}
                 container
               >
-                <DrawerMenu />
-
-                <Typography
-                  component="a"
-                  href="/"
-                  sx={{
-                    height: 64,
-                    display: { xs: "flex", md: "none" },
-                  }}
-                >
-                  <img src={logo} alt="ziropa logo"></img>
-                </Typography>
-
                 <Button
+                  component={Link}
+                  to="/addProducts"
+                  variant="contained"
+                  size="small"
                   sx={{
+                    display: "flex",
                     background: "rgba(51,51,51,0.8)",
                     "&:hover": {
                       backgroundColor: "black",
                     },
                   }}
-                  variant="contained"
-                  size="large"
-                  component={Link}
-                  to="/login"
                 >
-                  <BiUser />
+                  Produkter
+                </Button>
+                <Button
+                  component={Link}
+                  to="/addInspiration"
+                  variant="contained"
+                  size="small"
+                  sx={{
+                    display: "flex",
+                    background: "rgba(51,51,51,0.8)",
+                    "&:hover": {
+                      backgroundColor: "black",
+                    },
+                  }}
+                >
+                  Inspiration
+                </Button>
+                <Button
+                  component={Link}
+                  onClick={logoutUser}
+                  to="/login"
+                  variant="contained"
+                  size="small"
+                  sx={{
+                    display: "flex",
+                    background: "rgba(51,51,51,0.8)",
+                    "&:hover": {
+                      backgroundColor: "black",
+                    },
+                  }}
+                >
+                  Log out
                 </Button>
               </Box>
             </>
           ) : (
-            <Grid sx={{ placeItems: "center" }} container>
-              <Grid item xs={1}>
-                <Typography
-                  component="a"
-                  href="/"
-                  sx={{
-                    height: 96,
-                    mr: 2,
-                    display: { xs: "none", md: "flex" },
-                  }}
-                >
-                  <img src={logo} alt="ziropa logo"></img>
-                </Typography>
-              </Grid>
-              <Grid item xs={9} sx={{}}>
+            <Grid
+              sx={{
+                placeItems: "center",
+
+                justifyContent: "space-between",
+              }}
+              container
+            >
+              <Grid item xs={1} sx={{}}></Grid>
+              <Grid flexGrow={1} item xs={2} sx={{}}>
                 <Tabs
                   variant="myVariant"
                   TabIndicatorProps={{
@@ -97,61 +114,50 @@ export default function Nav() {
                   value={value}
                   onChange={(e, val) => setValue(val)}
                   sx={{
-                    float: "right",
+                    borderColor: "black",
+
+                    float: "left",
                     boxSizing: "border-box",
                   }}
                 >
-                  <Tab label="Hjem" component={Link} to="/" value="/" />
                   <Tab
+                    sx={{
+                      "&:hover": { backgroundColor: "grey" },
+                    }}
                     label="Produkter"
                     component={Link}
-                    to="/products"
+                    to="/addProducts"
                     value="/products"
                   />
-                  <Tab
-                    label="Nyheder"
-                    component={Link}
-                    to="/news"
-                    value="/news"
-                  />
 
                   <Tab
+                    sx={{
+                      "&:hover": { backgroundColor: "grey" },
+                    }}
                     label="Inspiration"
                     component={Link}
-                    to="/inspiration"
+                    to="/addInspiration"
                     value="/inspiration"
-                  />
-
-                  <Tab
-                    label="Om os"
-                    component={Link}
-                    to="/about"
-                    value="/about"
-                  />
-                  <Tab
-                    label="Kontakt"
-                    component={Link}
-                    to="/Contact"
-                    value="/Contact"
                   />
                 </Tabs>
               </Grid>
-              <Grid item xs={1} />
-              <Grid item xs={1}>
-                <Box display="flex" sx={{ float: "right" }}>
+              <Grid item xs={0}>
+                <Box display="flex">
                   <Button
                     component={Link}
                     to="/login"
+                    onClick={logoutUser}
                     variant="contained"
                     size="large"
                     sx={{
+                      display: "flex",
                       background: "rgba(51,51,51,0.8)",
                       "&:hover": {
                         backgroundColor: "black",
                       },
                     }}
                   >
-                    <BiUser />
+                    Log out
                   </Button>
                 </Box>
               </Grid>
@@ -163,4 +169,9 @@ export default function Nav() {
   );
 }
 
-/* ---------- https://mui.com/system/properties/-------------- */
+/* <h1>Dashboard </h1>
+      <h2>Name : {user.displayName}</h2>
+      <h2>Email : {user.email}</h2>
+      <button className="buttonLogin" onClick={logoutUser}>
+        Log out
+      </button> */

@@ -46,7 +46,7 @@
   bottom: 75px;
 }
 
-.backgroundHome{
+.backgroundHome {
   max-width: 100%;
   height: auto;
   left: 0px;
@@ -55,22 +55,18 @@
   bottom: 120px;
   z-index: -1;
 }
-.backgroundHome1{
+.backgroundHome1 {
   max-width: 100%;
   height: auto;
   left: 0px;
   right: 0px;
- 
 }
 
-
-
- .h1produkt{
+.h1produkt {
   font-size: 50px;
-    color: white;
-    text-align: center;
-    position: absolute;
-   
+  color: white;
+  text-align: center;
+  position: absolute;
 }
 
 .App {
@@ -90,7 +86,7 @@
   transition: all 500ms;
   max-width: 100%;
   height: 600px;
- 
+
   left: 0px;
   right: 0px;
 }
@@ -126,44 +122,42 @@
   padding-top: 5px;
 }
 
-.slide{
+.slide {
   max-width: 100%;
   height: auto;
   left: 0px;
   right: 0px;
- 
 }
 
-
 /* css for om os */
-.about{
+.about {
   padding: 6rem 3rem 5rem 3rem;
   background: #f8f8f8;
 }
-.row{
+.row {
   display: flex;
   justify-content: space-around;
 }
-.row .column{
+.row .column {
   width: 40%;
 }
-.column .tabs{
-  display: flex;   
+.column .tabs {
+  display: flex;
 }
-.single-tab{
+.single-tab {
   background: white;
   margin-right: 10px;
   cursor: pointer;
 }
-.single-tab h2{
-  display:block;
+.single-tab h2 {
+  display: block;
   padding: 10px 16px;
   border-radius: 4px;
   color: #3c3c3c;
   font-size: 14px;
   font-weight: 600;
 }
-.about-img{
+.about-img {
   position: relative;
   background-image: url(components/assets/omosimg.PNG);
   border-radius: 25px;
@@ -173,76 +167,75 @@
   height: 550px;
   width: 100%;
 }
-.content{
+.content {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   display: none;
 }
 
-
-.active-content{
+.active-content {
   display: block;
 }
-.active-tab{
-  background: #A7915E;
+.active-tab {
+  background: #a7915e;
   position: relative;
 }
-.active-tab::before{
+.active-tab::before {
   position: absolute;
   bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 5px 5px 0 5px;
-  border-color: #A7915E transparent transparent transparent;
+  border-color: #a7915e transparent transparent transparent;
 }
-.active-tab h2{
+.active-tab h2 {
   color: white;
 }
-.content h2{
+.content h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 1rem;
 }
-.content p{
+.content p {
   padding-bottom: 1rem;
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
   color: #999;
 }
-.content h3{
+.content h3 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
 /* Skills CSS */
-.skills-row{
+.skills-row {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.skills-column{
+.skills-column {
   margin-bottom: 30px;
   margin-right: 20px;
 }
-.progress-wrap h3{
+.progress-wrap h3 {
   font-size: 14px !important;
   margin-bottom: 10px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.progress{
+.progress {
   height: 8px;
-  background: rgba(0,0,0,.05);
+  background: rgba(0, 0, 0, 0.05);
   overflow: visible;
 }
-.progress-bar{
+.progress-bar {
   width: 80%;
   height: 8px;
   background: #18dcff;
@@ -250,7 +243,7 @@
   position: relative;
   border-radius: 2px;
 }
-.progress-bar span{
+.progress-bar span {
   position: absolute;
   top: -30px;
   right: 0;
@@ -258,45 +251,45 @@
   font-weight: 400;
   color: #18dcff;
 }
-.PhotoShop{
+.PhotoShop {
   width: 88%;
 }
-.Javascript{
+.Javascript {
   width: 85%;
 }
-.Designer{
+.Designer {
   width: 90%;
 }
 /* Experience CSS */
-.exp-column h3{
+.exp-column h3 {
   margin-bottom: 10px;
 }
-.exp-column span{
+.exp-column span {
   font-weight: 500;
   color: #18dcff;
 }
-.exp-column p{
- margin-top: 10px;
+.exp-column p {
+  margin-top: 10px;
 }
-@media screen and (max-width:768px) {
-  .about{
-      padding: 2rem 1rem 3rem 1rem;
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 2rem 1rem 3rem 1rem;
   }
-  .row{
-      display: flex;
-      flex-direction: column;
+  .row {
+    display: flex;
+    flex-direction: column;
   }
-  .about-img{
-      height: 500px;
+  .about-img {
+    height: 500px;
   }
-  .row .column{
-      width: 100%;  
+  .row .column {
+    width: 100%;
   }
-  .tabs{
-      padding-top: 3rem;
+  .tabs {
+    padding-top: 3rem;
   }
-  .skills-row{
-      grid-template-columns: 1fr;
+  .skills-row {
+    grid-template-columns: 1fr;
   }
 }
 /* css for om os slutter her */

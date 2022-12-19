@@ -6,8 +6,8 @@ import {
   ListItemButton,
   ListItemText,
 } from "@mui/material";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { BiUser } from "react-icons/bi";
-import { Button } from "bootstrap";
 import { Link } from "react-router-dom";
 
 const DrawerMenu = () => {
@@ -87,6 +87,7 @@ const DrawerMenu = () => {
         </List>
       </Drawer>
       <IconButton sx={{ color: "white" }} onClick={() => setOpen(!open)}>
+        <MenuRoundedIcon sx={{ float: "left", fontSize: 40 }} />
       </IconButton>
     </>
   );
