@@ -51,16 +51,11 @@ export default function HomePage() {
   return (
     <html>
       <img className="backgroundHome" src={packageInfo}></img>
-      <div className="home">
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "20% 49% 28%",
-            gridGap: 20,
-            justifyContent: "",
-          }}
+    
+        <div className="home"
+          
         >
-          <div>
+          <div className="column1">
             <Link to="/products">
               <h1 className="h1produkt"> Produkter</h1>
               <img className="backgroundHome1" src={packageInfo2}></img>
@@ -72,7 +67,7 @@ export default function HomePage() {
           </div>
 
           {/* column mid */}
-          <div>
+          <div className="column2">
           
             <AwesomeSlider
               organicArrows={false}
@@ -120,13 +115,13 @@ export default function HomePage() {
             </AwesomeSlider>
           </div>
 
-          <div>
+          <div className="column3">
 
 
           <ElfsightWidget widgetID="57a3de4c-6be9-46a4-9366-453a0fe3eafb" />
           </div>
         </div>
-      </div>
+      
 <br>
 </br>
 <br>

@@ -66,6 +66,8 @@
   height: auto;
   left: 0px;
   right: 0px;
+  grid-template-columns: auto;
+  grid-gap:10px 10px;
 }
 
 .h1produkt {
@@ -347,3 +349,41 @@
   position: relative;
   left: 100px;
 }
+
+
+.home{
+  display: flex;
+  flex-direction: row;
+  grid-gap: 20px;
+  grid-auto-flow: column;
+  object-fit: cover;
+  justify-content: center;
+  box-sizing: border-box;
+
+}
+
+.column1{
+  width: 20%;
+}
+
+.column2{
+  width: 49%;
+}
+
+.column3{
+  width: 28%;
+}
+
+@media (max-width: 967px) {
+  .home{
+    flex-direction: column;
+   
+  }
+  }
+
+  @media (max-width: 967px) {
+  .column1,.column2,.column3{
+   width: 100%;
+   
+  }
+  }
