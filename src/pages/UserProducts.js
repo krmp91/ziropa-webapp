@@ -4,6 +4,7 @@ import React from "react";
 import { useUserContext } from "../context/userContext";
 import LoginNav from "../components/LoginNav";
 import DisplayProducts from "../components/DisplayProducts";
+import BoxAddProducts from "../components/BoxAddProducts";
 import AddProducts from "../components/AddProducts";
 
 const ContainerStyle = {
@@ -37,25 +38,24 @@ const UserProducts = () => {
           Tilføj eller fjern produkter her!
         </Typography>
         <Box
-        //   sx={{
-        //     m: 1,
-        //     display: "flex",
-        //     borderRadius: "26px",
-        //     pb: "calc(var(--addbtnSize) + 10%)",
-        //   }}
+        // sx={{
+        //   m: 1,
+        //   display: "flex",
+        //   borderRadius: "26px",
+        //   pb: "calc(var(--addbtnSize) + 10%)",
+        // }}
         >
           <DisplayProducts />
         </Box>
         <Box
-        //   sx={{
-        //     m: 1,
-        //     display: "flex",
-        //     borderRadius: "26px",
-        //     pb: "calc(var(--addbtnSize) + 10%)",
-        //   }}
-        >
-          <AddProducts />
-        </Box>
+        // sx={{
+        //   m: 1,
+        //   display: "flex",
+        //   borderRadius: "26px",
+        //   pb: "calc(var(--addbtnSize) + 10%)",
+        // }}
+        ></Box>
+        <AddProducts />
       </Box>
     </Box>
   );

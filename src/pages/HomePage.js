@@ -11,18 +11,14 @@ import { Link } from "react-router-dom";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/captioned.css";
-import Footer from 'rc-footer';
-import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
-import { GoLocation } from 'react-icons/go';
-import { BsFacebook } from 'react-icons/bs';
-import { BsInstagram } from 'react-icons/bs';
-import { AiOutlineMail } from 'react-icons/ai';
-import { AiOutlinePhone } from 'react-icons/ai';
-import { ElfsightWidget } from 'react-elfsight-widget';
-
-
-
-
+import Footer from "rc-footer";
+import "rc-footer/assets/index.css"; // import 'rc-footer/asssets/index.less';
+import { GoLocation } from "react-icons/go";
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlinePhone } from "react-icons/ai";
+import { ElfsightWidget } from "react-elfsight-widget";
 
 const buttonStyle = {
   padding: "15px",
@@ -73,7 +69,6 @@ export default function HomePage() {
 
           {/* column mid */}
           <div>
-          
             <AwesomeSlider
               organicArrows={false}
               buttonContentRight={<p style={buttonStyle}>{">"}</p>}
@@ -83,31 +78,27 @@ export default function HomePage() {
               cancelOnInteraction={false} // should stop playing on user interaction
               interval={6000}
             >
-
               <div style={{ zIndex: 2 }}>
                 <div>
                   <img style={bgImg} alt="Wow" src={slideinfo2} />
                   <div className="slidetitle1">
-                  <h1>Pumpkin Latte Opskrift</h1>
-                  <h2>Holder dig varm</h2>
-                  <button className="button-56"> Tjek her </button>
+                    <h1>Pumpkin Latte Opskrift</h1>
+                    <h2>Holder dig varm</h2>
+                    <button className="button-56"> Tjek her </button>
                   </div>
                 </div>
               </div>
-
 
               <div style={{ zIndex: 2 }}>
                 <div>
                   <img style={bgImg} alt="Wow" src={slideinfo1} />
                   <div className="slidetitle">
-                  <h1>Ny opskrift</h1>
-                  <h2>med vores mango sirup</h2>
-                  <button className="button-56"> Tjek den ud</button>
+                    <h1>Ny opskrift</h1>
+                    <h2>med vores mango sirup</h2>
+                    <button className="button-56"> Tjek den ud</button>
                   </div>
                 </div>
               </div>
-
-              
 
               <div style={{ zIndex: 2 }}>
                 <div>
@@ -121,40 +112,38 @@ export default function HomePage() {
           </div>
 
           <div>
-
-
-          <ElfsightWidget widgetID="57a3de4c-6be9-46a4-9366-453a0fe3eafb" />
+            <ElfsightWidget widgetID="57a3de4c-6be9-46a4-9366-453a0fe3eafb" />
           </div>
         </div>
       </div>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-      <Footer 
-style={fot}
-    columns={[
-      
-      {
-        
-        title: 'Kontakt os',
-        items: [
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Footer
+        style={fot}
+        columns={[
           {
             title: "Kontakt os",
             items: [
               {
-                icon: <GoLocation />,
-                title: "Universitetsbyen 14, 8000 Aarhus",
-                openExternal: true,
-              },
-              {
-                icon: <AiOutlineMail />,
-                title: "info@ziropasirup.dk",
-                openExternal: true,
+                title: "Kontakt os",
+                items: [
+                  {
+                    icon: <GoLocation />,
+                    title: "Universitetsbyen 14, 8000 Aarhus",
+                    openExternal: true,
+                  },
+                  {
+                    icon: <AiOutlineMail />,
+                    title: "info@ziropasirup.dk",
+                    openExternal: true,
+                  },
+                  {
+                    icon: <AiOutlinePhone />,
+                    title: "+4529130223",
+                  },
+                ],
               },
               {
                 icon: <AiOutlinePhone />,
@@ -163,38 +152,26 @@ style={fot}
             ],
           },
           {
-            icon: <AiOutlinePhone/>,
-            title: '+4529130223',
+            title: "Følg os",
+            items: [
+              {
+                icon: <BsFacebook />,
+                title: "Facebook",
+                url: "https://www.facebook.com/ziropasirup",
+                openExternal: true,
+              },
+              {
+                icon: <BsInstagram />,
+                title: "Instagram",
+                url: "https://mobile.ant.design/",
+                openExternal: true,
+              },
+            ],
           },
-        ],
-      },
-      {
-        title: 'Følg os',
-        items: [
-          {
-            icon: <BsFacebook/>, 
-            title:"Facebook",
-            url: 'https://www.facebook.com/ziropasirup',
-            openExternal: true,
-          },
-          {
-            icon:<BsInstagram/>,
-            title: 'Instagram',
-            url: 'https://mobile.ant.design/',
-            openExternal: true,
-        
-          }
-         
-        ],
-      },
-      
-    ]}
-    
-    img  src={packageInfo3}
-  />
-
-
-
+        ]}
+        img
+        src={packageInfo3}
+      />
     </html>
   );
 }

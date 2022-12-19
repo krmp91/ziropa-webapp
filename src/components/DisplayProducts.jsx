@@ -53,7 +53,7 @@ export default function Products() {
                   style={{ height: 180, paddingTop: "15px" }}
                 />
               </div>
-              <div className="form-display">
+              <Box>
                 <Typography
                   sx={{
                     fontSize: "var(--H2size)",
@@ -82,9 +82,9 @@ export default function Products() {
                   variant="p"
                   sx={{ fontSize: 14, mb: 2, color: "whitesmoke" }}
                 >
-                  Gruppe oprettet: {createdAt.toDate().toDateString()} <br />
+                  Produkt oprettet: {createdAt.toDate().toDateString()} <br />
                 </Typography>
-              </div>
+              </Box>
             </div>
           </Box>
         ))
