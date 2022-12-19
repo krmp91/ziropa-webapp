@@ -3,6 +3,7 @@ import { Component } from "react";
 import  packageInfo from "../components/assets/orangecocktail1.jpg";
 import  packageInfo1 from "../components/assets/imgprodukter.JPG";
 import  packageInfo2 from "../components/assets/imgprodukter1.JPG";
+import  packageInfo3 from "../components/assets/footimg.png";
 import  slideinfo1 from "../components/assets/slide1.jpeg";
 import  slideinfo2 from "../components/assets/slide2.jpeg";
 import  slideinfo3 from "../components/assets/slide3.JPG";
@@ -17,7 +18,7 @@ import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { AiOutlinePhone } from 'react-icons/ai';
-import { style } from "@mui/system";
+
 
 
 
@@ -88,7 +89,7 @@ export default function HomePage() {
           />
           <h1>Microsoft</h1>
           <h2>Nice to see you</h2>
-          <button> Click Me </button>
+          <button className="button-56"> Click Me </button>
         </div>
       </div>
 
@@ -125,7 +126,14 @@ export default function HomePage() {
           <div>Column 3</div>
         </div>
       </div>
-
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
       <Footer 
 style={fot}
     columns={[
@@ -164,13 +172,15 @@ style={fot}
             title: 'Instagram',
             url: 'https://mobile.ant.design/',
             openExternal: true,
+        
           }
          
         ],
       },
       
     ]}
-    bottom="Made with ❤️ by AFX"
+    
+    img  src={packageInfo3}
   />
 
 
