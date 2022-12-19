@@ -1,31 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { Component } from "react";
-import  packageInfo from "../components/assets/orangecocktail1.jpg";
-import  packageInfo1 from "../components/assets/imgprodukter.JPG";
-import  packageInfo2 from "../components/assets/imgprodukter1.JPG";
-import  packageInfo3 from "../components/assets/footimg.png";
-import  slideinfo1 from "../components/assets/slide1.jpeg";
-import  slideinfo2 from "../components/assets/slide2.jpeg";
-import  slideinfo3 from "../components/assets/slide3.JPG";
 import packageInfo from "../components/assets/orangecocktail1.jpg";
 import packageInfo1 from "../components/assets/imgprodukter.JPG";
 import packageInfo2 from "../components/assets/imgprodukter1.JPG";
+import packageInfo3 from "../components/assets/footimg.png";
+import slideinfo1 from "../components/assets/slide1.jpeg";
+import slideinfo2 from "../components/assets/slide2.jpeg";
+import slideinfo3 from "../components/assets/slide3.JPG";
 import { Link } from "react-router-dom";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/captioned.css";
-import Footer from 'rc-footer';
-import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
-import { GoLocation } from 'react-icons/go';
-import { BsFacebook } from 'react-icons/bs';
-import { BsInstagram } from 'react-icons/bs';
-import { AiOutlineMail } from 'react-icons/ai';
-import { AiOutlinePhone } from 'react-icons/ai';
-
-
-
-
-
+import Footer from "rc-footer";
+import "rc-footer/assets/index.css"; // import 'rc-footer/asssets/index.less';
+import { GoLocation } from "react-icons/go";
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlinePhone } from "react-icons/ai";
 
 const buttonStyle = {
   padding: "15px",
@@ -46,11 +38,9 @@ const bgImg = {
   width: "100%",
 };
 
-
 const fot = {
-  fontSize: "20px"
+  fontSize: "20px",
 };
-
 
 export default function HomePage() {
   return (
@@ -78,31 +68,24 @@ export default function HomePage() {
 
           {/* column mid */}
           <div>
-
-            
-          <AwesomeSlider 
-     
-      organicArrows={false}
-      buttonContentRight={<p style={buttonStyle}>{">"}</p>}
-      buttonContentLeft={<p style={buttonStyle}>{"<"}</p>}
-      play
-      // customContent={<p style={contentStyle}>{"I am the content/text"}</p>}
-      cancelOnInteraction={false} // should stop playing on user interaction
-      interval={6000}
-    >
-      <div style={{ zIndex: 2 }}>
-        <div>
-          <img
-            style={bgImg}
-            alt="Wow"
-            src={slideinfo1}
-          />
-          <h1>Microsoft</h1>
-          <h2>Nice to see you</h2>
-          <button className="button-56"> Click Me </button>
-        </div>
-      </div>
-      </AwesomeSlider>
+            <AwesomeSlider
+              organicArrows={false}
+              buttonContentRight={<p style={buttonStyle}>{">"}</p>}
+              buttonContentLeft={<p style={buttonStyle}>{"<"}</p>}
+              play
+              // customContent={<p style={contentStyle}>{"I am the content/text"}</p>}
+              cancelOnInteraction={false} // should stop playing on user interaction
+              interval={6000}
+            >
+              <div style={{ zIndex: 2 }}>
+                <div>
+                  <img style={bgImg} alt="Wow" src={slideinfo1} />
+                  <h1>Microsoft</h1>
+                  <h2>Nice to see you</h2>
+                  <button className="button-56"> Click Me </button>
+                </div>
+              </div>
+            </AwesomeSlider>
             <AwesomeSlider
               organicArrows={false}
               buttonContentRight={<p style={buttonStyle}>{">"}</p>}
@@ -144,65 +127,53 @@ export default function HomePage() {
           <div>Column 3</div>
         </div>
       </div>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-      <Footer 
-style={fot}
-    columns={[
-      
-      {
-        
-        title: 'Kontakt os',
-        items: [
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Footer
+        style={fot}
+        columns={[
           {
-            icon: <GoLocation/>,
-            title: 'Universitetsbyen 14, 8000 Aarhus',
-            openExternal: true,
+            title: "Kontakt os",
+            items: [
+              {
+                icon: <GoLocation />,
+                title: "Universitetsbyen 14, 8000 Aarhus",
+                openExternal: true,
+              },
+              {
+                icon: <AiOutlineMail />,
+                title: "info@ziropasirup.dk",
+                openExternal: true,
+              },
+              {
+                icon: <AiOutlinePhone />,
+                title: "+4529130223",
+              },
+            ],
           },
           {
-            icon: <AiOutlineMail/>,
-            title: 'info@ziropasirup.dk',
-            openExternal: true,
+            title: "Følg os",
+            items: [
+              {
+                icon: <BsFacebook />,
+                title: "Facebook",
+                url: "https://www.facebook.com/ziropasirup",
+                openExternal: true,
+              },
+              {
+                icon: <BsInstagram />,
+                title: "Instagram",
+                url: "https://mobile.ant.design/",
+                openExternal: true,
+              },
+            ],
           },
-          {
-            icon: <AiOutlinePhone/>,
-            title: '+4529130223',
-          },
-        ],
-      },
-      {
-        title: 'Følg os',
-        items: [
-          {
-            icon: <BsFacebook/>, 
-            title:"Facebook",
-            url: 'https://www.facebook.com/ziropasirup',
-            openExternal: true,
-          },
-          {
-            icon:<BsInstagram/>,
-            title: 'Instagram',
-            url: 'https://mobile.ant.design/',
-            openExternal: true,
-        
-          }
-         
-        ],
-      },
-      
-    ]}
-    
-    img  src={packageInfo3}
-  />
-
-
-
+        ]}
+        img
+        src={packageInfo3}
+      />
     </html>
   );
 }
