@@ -5,7 +5,6 @@ import { useUserContext } from "../context/userContext";
 import LoginNav from "../components/LoginNav";
 import DisplayProducts from "../components/DisplayProducts";
 import BoxAddProducts from "../components/BoxAddProducts";
-import AddProducts from "../components/AddProducts";
 
 const ContainerStyle = {
   minHeight: "100vh",
@@ -55,7 +54,7 @@ const UserProducts = () => {
         //   pb: "calc(var(--addbtnSize) + 10%)",
         // }}
         ></Box>
-        <AddProducts />
+        <BoxAddProducts />
       </Box>
     </Box>
   );

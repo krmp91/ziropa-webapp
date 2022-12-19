@@ -67,11 +67,11 @@ export default function AddProducts() {
             createdAt: Timestamp.now().toDate(),
           })
             .then(() => {
-              toast("Group created successfully", { type: "success" });
+              toast("Product added successfully", { type: "success" });
               setProgress(0);
             })
             .catch((error) => {
-              toast("Error creating group", { type: "error" });
+              toast("Error adding product", { type: "error" });
               console.log(error);
             });
         });
@@ -80,75 +80,99 @@ export default function AddProducts() {
   };
 
   return (
-    <div className="form">
-      <h2>Opret gruppe</h2>
-      <label htmlFor="">Gruppens Navn: </label>
-      <input
-        className="form-control"
-        type="text"
-        name="title"
-        value={formData.title}
-        onChange={(e) => handleChange(e)}
-      />
-
-      {/*description*/}
-      <label htmlFor="">Beskrivelse: </label>
-      <textarea
-        className="form-control"
-        id="form-control"
-        name="description"
-        value={formData.description}
-        cols=""
-        rows=""
-        onChange={(e) => handleChange(e)}
-      />
-
-      {/* number of peoples in the group */}
-      <TextField
-        className="form-control"
-        type="number"
-        label="Maks antal medlemmer:"
-        name="numberOfPeople"
-        value={formData.numberOfPeople}
-        InputLabelProps={{
-          shrink: true,
-        }}
-        max="50"
-        min="1"
-        onChange={(e) => handleChange(e)}
-      />
-
-      {/* image */}
-      <label htmlFor=""> Billede </label>
-      <input
-        type="file"
-        name="image"
-        accept="image/*"
-        onChange={(e) => handleImageChange(e)}
-      />
-
-      {progress === 0 ? null : (
-        <div className="progress">
-          <div
-            className="progess-bar progress-bar-striped mt-2"
-            style={{ width: `${progress}%` }}
-          >
-            {`uploading image ${progress}%`}
-          </div>
-        </div>
-      )}
-      <Button
+    <Container
+      sx={{
+        maxWidth: "40vh",
+        p: 1,
+      }}
+    >
+      <Typography
+        variant="h4"
         sx={{
-          border: "var(--border)",
-          color: "var(--addBtnColor)",
-          backgroundColor: "var(--addBtnBGColor)",
-          marginTop: 4,
+          p: 2,
         }}
-        className="form-control-btn"
-        onClick={handleCreateProducts}
       >
-        Tilføj Gruppe
-      </Button>
-    </div>
+        Opret produkt
+      </Typography>
+      <Box
+        Container
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          p: 2,
+        }}
+      >
+        <Box sx={{ py: 1 }}>
+          <TextField
+            sx={{ minWidth: "100%" }}
+            id="outlined-textarea"
+            label="Produktets navn"
+            name="title"
+            multiline
+            defaultValue="Normal"
+            value={formData.title}
+            InputLabelProps={{
+              shrink: true,
+            }}
+            onChange={(e) => handleChange(e)}
+          />
+        </Box>
+        {/*description*/}
+        <Box sx={{ py: 1 }}>
+          <TextField
+            sx={{ minWidth: "100%" }}
+            id="outlined-textarea"
+            label="Beskrivelse"
+            name="description"
+            multiline
+            defaultValue="Normal"
+            rows={4}
+            value={formData.description}
+            InputLabelProps={{
+              shrink: true,
+            }}
+            onChange={(e) => handleChange(e)}
+          />
+        </Box>
+        {/* image */}
+        <Box sx={{ py: 1 }}>
+          <TextField
+            sx={{ minWidth: "100%" }}
+            label="Indsæt billede"
+            type="file"
+            name="image"
+            accept="image/*"
+            InputLabelProps={{
+              shrink: true,
+            }}
+            onChange={(e) => handleImageChange(e)}
+          />
+        </Box>
+        {progress === 0 ? null : (
+          <div className="progress">
+            <div
+              className="progess-bar progress-bar-striped mt-2"
+              style={{ width: `${progress}%` }}
+            >
+              {`uploading image ${progress}%`}
+            </div>
+          </div>
+        )}
+      </Box>
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Button
+          sx={{
+            border: "var(--border)",
+            color: "var(--addBtnColor)",
+            backgroundColor: "var(--addBtnBGColor)",
+            marginTop: 1,
+          }}
+          className="form-control-btn"
+          onClick={handleCreateProducts}
+        >
+          Tilføj Produkt
+        </Button>
+      </Box>
+    </Container>
   );
 }

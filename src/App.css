@@ -10,8 +10,8 @@
 :root {
   /* Modals */
   --btnColor: #a7915e;
-  --border: 2px solid#A7915E;
-  --bgColor: rgb(2, 2, 2);
+  --border: 2px solid#161616d2;
+  --bgColor: rgba(230, 207, 188, 0.829);
   --BgPop: hsl(0, 0%, 0%, 1.4);
   --gap: 25px;
   --btnWidth: 250px;
@@ -36,8 +36,8 @@
 
   /* Tilføj nye beskeder */
   --addbtnSize: 80px;
-  --addBtnBGColor: #a7915e;
-  --addBtnColor: rgb(216, 212, 215);
+  --addBtnBGColor: rgba(95, 71, 49, 0.774);
+  --addBtnColor: rgb(53, 53, 53);
   --addBtnBorder: 2px solid rgb(216, 212, 215);
 
   /* nav */
@@ -67,7 +67,7 @@
   left: 0px;
   right: 0px;
   grid-template-columns: auto;
-  grid-gap:10px 10px;
+  grid-gap: 10px 10px;
 }
 
 .h1produkt {
@@ -75,7 +75,6 @@
   color: white;
   text-align: center;
   position: absolute;
-
 }
 
 .App {
@@ -253,9 +252,6 @@
   border-radius: 2px;
 }
 
-
-
-
 @media screen and (max-width: 768px) {
   .about {
     padding: 2rem 1rem 3rem 1rem;
@@ -339,19 +335,18 @@
 }
 /* CSS footer slut */
 
-.slidetitle{
+.slidetitle {
   position: relative;
   right: 100px;
 }
 
-.slidetitle1{
+.slidetitle1 {
   color: white;
   position: relative;
   left: 100px;
 }
 
-
-.home{
+.home {
   display: flex;
   flex-direction: row;
   grid-gap: 20px;
@@ -359,110 +354,96 @@
   object-fit: cover;
   justify-content: center;
   box-sizing: border-box;
-
 }
 
-.column1{
+.column1 {
   width: 20%;
 }
 
-.column2{
+.column2 {
   width: 49%;
 }
 
-.column3{
+.column3 {
   width: 28%;
 }
 
 @media (max-width: 967px) {
-  .home{
+  .home {
     flex-direction: column;
-   
   }
+}
+
+@media (max-width: 967px) {
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
   }
-
-  @media (max-width: 967px) {
-  .column1,.column2,.column3{
-   width: 100%;
-   
-  }
-  }
-
-
-
-  /* Css nyhed */
-
-  
-  .menu{
-    position: relative;
-    top: 100px;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
-    grid-gap: 20px 40px;
-    margin: 0 20px;
 }
 
+/* Css nyhed */
 
-
-
-
-
-.food-items{
-    display: grid;
-    position: relative;
-    grid-template-rows: auto 1fr;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    
-}
-.food-items img{
-    position: relative;
-    width: 100% ;
-    border-radius: 15px 15px 0 0;
-    
+.menu {
+  position: relative;
+  top: 100px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px 40px;
+  margin: 0 20px;
 }
 
-.details{
-    padding: 20px 10px;
-    display: grid;
-    grid-template-rows: auto 1fr 50px;
-    grid-row-gap: 15px;
+.food-items {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-.details-sub{
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.details-sub>h5{
-    font-weight: 600;
-    font-size: 18px;
-}
-.price{
-    text-align: right;
-}
-.details>p{
-    color: #6f6f6f;
-    font-size: 15px;
-    line-height: 28px;
-    font-weight: 400;
-    align-self: stretch;
+.food-items img {
+  position: relative;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
 }
 
+.details {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap: 15px;
+}
+.details-sub {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.details-sub > h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.price {
+  text-align: right;
+}
+.details > p {
+  color: #6f6f6f;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  align-self: stretch;
+}
 
-
-.details> a button {
-    background-color: #a7915e;
-    border: none;
-    color: #ffffff;
-    font-size: 16px;
-    width: 300px;
-    height: 50px;
-   
+.details > a button {
+  background-color: #a7915e;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  width: 300px;
+  height: 50px;
 }
 
 /* Css nyhed slut */
 
-.news1{
+.news1 {
   position: relative;
   background-image: url(components/assets/nyhed1.jpeg);
   border-radius: 25px;
@@ -473,7 +454,7 @@
   width: 100%;
 }
 
-.news2{
+.news2 {
   position: relative;
   background-image: url(components/assets/nyhed2.jpeg);
   border-radius: 25px;
@@ -483,4 +464,3 @@
   height: 550px;
   width: 100%;
 }
-
