@@ -69,10 +69,11 @@
 }
 
 .h1produkt {
-  font-size: 50px;
+  font-size: 4vw;
   color: white;
   text-align: center;
   position: absolute;
+
 }
 
 .App {
@@ -335,3 +336,14 @@
   }
 }
 /* CSS footer slut */
+
+.slidetitle{
+  position: relative;
+  right: 100px;
+}
+
+.slidetitle1{
+  color: white;
+  position: relative;
+  left: 100px;
+}
