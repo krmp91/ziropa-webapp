@@ -18,7 +18,7 @@ import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { AiOutlinePhone } from 'react-icons/ai';
-
+import { ElfsightWidget } from 'react-elfsight-widget';
 
 
 
