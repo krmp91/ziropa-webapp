@@ -22,20 +22,38 @@ export default function Products() {
   return (
     <div>
       {products.length === 0 ? (
-        <Typography>No products found!</Typography>
+        <p>No product found!</p>
       ) : (
-        products.map((id, title, description, imageUrl, createdAt) => (
-          <Box key={id}>
-            div
-            <Box>
-              <Box>
+        products.map(({ id, title, description, imageUrl, createdAt }) => (
+          <Box
+            sx={{
+              m: 1,
+              mt: 2,
+              p: 1,
+              pb: 3,
+              backgroundColor: "hsl(0, 0%, 0%, 0.40)",
+              borderRadius: "26px",
+
+              maxWidth: "85vw",
+            }}
+            key={id}
+          >
+            <div>
+              <div
+                style={{
+                  ml: "auto",
+                  mr: "auto",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 <img
                   src={imageUrl}
                   alt="title"
-                  sx={{ height: "180", width: "180" }}
+                  style={{ height: 180, paddingTop: "15px" }}
                 />
-              </Box>
-              <Box>
+              </div>
+              <div className="form-display">
                 <Typography
                   sx={{
                     fontSize: "var(--H2size)",
@@ -46,12 +64,7 @@ export default function Products() {
                 >
                   {title}
                 </Typography>
-                <Typography
-                  variant="p"
-                  sx={{ fontSize: 14, mb: 2, color: "whitesmoke" }}
-                >
-                  Produkt oprettet: {createdAt.toDate().toString()} <br />
-                </Typography>
+
                 <Typography
                   variant="p"
                   sx={{
@@ -63,8 +76,16 @@ export default function Products() {
                 >
                   {description}
                 </Typography>
-              </Box>
-            </Box>
+                <div className="typoGroup"></div>
+
+                <Typography
+                  variant="p"
+                  sx={{ fontSize: 14, mb: 2, color: "whitesmoke" }}
+                >
+                  Gruppe oprettet: {createdAt.toDate().toDateString()} <br />
+                </Typography>
+              </div>
+            </div>
           </Box>
         ))
       )}

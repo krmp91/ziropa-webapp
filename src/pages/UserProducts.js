@@ -37,22 +37,22 @@ const UserProducts = () => {
           Tilføj eller fjern produkter her!
         </Typography>
         <Box
-          sx={{
-            m: 1,
-            display: "flex",
-            borderRadius: "26px",
-            pb: "calc(var(--addbtnSize) + 10%)",
-          }}
+        //   sx={{
+        //     m: 1,
+        //     display: "flex",
+        //     borderRadius: "26px",
+        //     pb: "calc(var(--addbtnSize) + 10%)",
+        //   }}
         >
           <DisplayProducts />
         </Box>
         <Box
-          sx={{
-            m: 1,
-            display: "flex",
-            borderRadius: "26px",
-            pb: "calc(var(--addbtnSize) + 10%)",
-          }}
+        //   sx={{
+        //     m: 1,
+        //     display: "flex",
+        //     borderRadius: "26px",
+        //     pb: "calc(var(--addbtnSize) + 10%)",
+        //   }}
         >
           <AddProducts />
         </Box>
