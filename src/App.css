@@ -243,34 +243,10 @@
   position: relative;
   border-radius: 2px;
 }
-.progress-bar span {
-  position: absolute;
-  top: -30px;
-  right: 0;
-  font-size: 16px;
-  font-weight: 400;
-  color: #18dcff;
-}
-.PhotoShop {
-  width: 88%;
-}
-.Javascript {
-  width: 85%;
-}
-.Designer {
-  width: 90%;
-}
-/* Experience CSS */
-.exp-column h3 {
-  margin-bottom: 10px;
-}
-.exp-column span {
-  font-weight: 500;
-  color: #18dcff;
-}
-.exp-column p {
-  margin-top: 10px;
-}
+
+
+
+
 @media screen and (max-width: 768px) {
   .about {
     padding: 2rem 1rem 3rem 1rem;
@@ -297,7 +273,7 @@
 
 
 
-/* CSS */
+/* CSS footer */
 .button-56 {
   align-items: center;
   background-color: #fee6e3;
@@ -355,3 +331,4 @@
     padding: 0 40px;
   }
 }
+/* CSS footer slut */
