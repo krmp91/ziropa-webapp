@@ -47,16 +47,11 @@ export default function HomePage() {
   return (
     <html>
       <img className="backgroundHome" src={packageInfo}></img>
-      <div className="home">
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "20% 49% 28%",
-            gridGap: 20,
-            justifyContent: "",
-          }}
+    
+        <div className="home"
+          
         >
-          <div>
+          <div className="column1">
             <Link to="/products">
               <h1 className="h1produkt"> Produkter</h1>
               <img className="backgroundHome1" src={packageInfo2}></img>
