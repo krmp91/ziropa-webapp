@@ -13,12 +13,17 @@ const style3 = {
   height: "var(--addbtnSize)",
   backgroundColor: "var(--addBtnBGColor)",
   position: "fixed",
+  transform: "translate(-50%, -50%)",
   bottom: "8%",
-  left: "40%",
   border: "var(--addBtnBorder)",
   boxShadow: 24,
   p: 4,
   m: 0,
+  "&:hover": {
+    border: "1px solid #161616d2",
+    color: "#161616d2",
+    backgroundColor: "rgba(95, 71, 49, 0.874)",
+  },
 };
 
 const style1 = {
@@ -28,7 +33,7 @@ const style1 = {
   transform: "translate(-50%, -50%)",
   width: "80%",
   height: "70%",
-  backgroundColor: "black",
+  backgroundColor: "var(--bgColor)",
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
