@@ -18,6 +18,7 @@ import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { AiOutlinePhone } from 'react-icons/ai';
+import { ElfsightWidget } from 'react-elfsight-widget';
 
 
 
@@ -116,9 +117,14 @@ export default function HomePage() {
             </AwesomeSlider>
           </div>
 
-          <div>Column 3</div>
+          <div>
+
+
+          <ElfsightWidget widgetID="57a3de4c-6be9-46a4-9366-453a0fe3eafb" />
+          </div>
         </div>
       </div>
+      
 <br>
 </br>
 <br>
@@ -163,7 +169,7 @@ style={fot}
           {
             icon:<BsInstagram/>,
             title: 'Instagram',
-            url: 'https://mobile.ant.design/',
+            url: 'https://www.instagram.com/ziropaaarhus/',
             openExternal: true,
         
           }
