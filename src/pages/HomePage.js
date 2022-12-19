@@ -77,29 +77,7 @@ export default function HomePage() {
           <div>
 
             
-          <AwesomeSlider 
-     
-      organicArrows={false}
-      buttonContentRight={<p style={buttonStyle}>{">"}</p>}
-      buttonContentLeft={<p style={buttonStyle}>{"<"}</p>}
-      play
-      // customContent={<p style={contentStyle}>{"I am the content/text"}</p>}
-      cancelOnInteraction={false} // should stop playing on user interaction
-      interval={6000}
-    >
-      <div style={{ zIndex: 2 }}>
-        <div>
-          <img
-            style={bgImg}
-            alt="Wow"
-            src={slideinfo1}
-          />
-          <h1>Microsoft</h1>
-          <h2>Nice to see you</h2>
-          <button className="button-56"> Click Me </button>
-        </div>
-      </div>
-      </AwesomeSlider>
+          
             <AwesomeSlider
               organicArrows={false}
               buttonContentRight={<p style={buttonStyle}>{">"}</p>}
@@ -114,7 +92,7 @@ export default function HomePage() {
                   <img style={bgImg} alt="Wow" src={slideinfo1} />
                   <h1>Microsoft</h1>
                   <h2>Nice to see you</h2>
-                  <button> Click Me </button>
+                  <button className="button-56"> Click Me </button>
                 </div>
               </div>
 
@@ -123,7 +101,7 @@ export default function HomePage() {
                   <img style={bgImg} alt="Wow" src={slideinfo2} />
                   <h1>Microsoft</h1>
                   <h2>Nice to see you</h2>
-                  <button> Click Me </button>
+                  <button className="button-56"> Click Me </button>
                 </div>
               </div>
 
@@ -132,7 +110,7 @@ export default function HomePage() {
                   <img style={bgImg} alt="Wow" src={slideinfo3} />
                   <h1>Microsoft</h1>
                   <h2>Nice to see you</h2>
-                  <button> Click Me </button>
+                  <button className="button-56"> Click Me </button>
                 </div>
               </div>
             </AwesomeSlider>
