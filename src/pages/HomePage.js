@@ -47,70 +47,68 @@ export default function HomePage() {
   return (
     <html>
       <img className="backgroundHome" src={packageInfo}></img>
-    
-        <div className="home"
-          
-        >
-          <div className="column1">
-            <Link to="/products">
-              <h1 className="h1produkt"> Produkter</h1>
-              <img className="backgroundHome1" src={packageInfo2}></img>
-            </Link>
-            <Link to="/inspiration">
-              <h1 className="h1produkt"> Inspiration</h1>
-              <img className="backgroundHome1" src={packageInfo1}></img>
-            </Link>
-          </div>
 
-          {/* column mid */}
-          <div>
-            <AwesomeSlider
-              organicArrows={false}
-              buttonContentRight={<p style={buttonStyle}>{">"}</p>}
-              buttonContentLeft={<p style={buttonStyle}>{"<"}</p>}
-              play
-              // customContent={<p style={contentStyle}>{"I am the content/text"}</p>}
-              cancelOnInteraction={false} // should stop playing on user interaction
-              interval={6000}
-            >
-              <div style={{ zIndex: 2 }}>
-                <div>
-                  <img style={bgImg} alt="Wow" src={slideinfo2} />
-                  <div className="slidetitle1">
-                    <h1>Pumpkin Latte Opskrift</h1>
-                    <h2>Holder dig varm</h2>
-                    <button className="button-56"> Tjek her </button>
-                  </div>
+      <div className="home">
+        <div className="column1">
+          <Link to="/products">
+            <h1 className="h1produkt"> Produkter</h1>
+            <img className="backgroundHome1" src={packageInfo2}></img>
+          </Link>
+          <Link to="/inspiration">
+            <h1 className="h1produkt"> Inspiration</h1>
+            <img className="backgroundHome1" src={packageInfo1}></img>
+          </Link>
+        </div>
+
+        {/* column mid */}
+        <div className="column2">
+          <AwesomeSlider
+            organicArrows={false}
+            buttonContentRight={<p style={buttonStyle}>{">"}</p>}
+            buttonContentLeft={<p style={buttonStyle}>{"<"}</p>}
+            play
+            // customContent={<p style={contentStyle}>{"I am the content/text"}</p>}
+            cancelOnInteraction={false} // should stop playing on user interaction
+            interval={6000}
+          >
+            <div style={{ zIndex: 2 }}>
+              <div>
+                <img style={bgImg} alt="Wow" src={slideinfo2} />
+                <div className="slidetitle1">
+                  <h1>Pumpkin Latte Opskrift</h1>
+                  <h2>Holder dig varm</h2>
+                  <button className="button-56"> Tjek her </button>
                 </div>
               </div>
+            </div>
 
-              <div style={{ zIndex: 2 }}>
-                <div>
-                  <img style={bgImg} alt="Wow" src={slideinfo1} />
-                  <div className="slidetitle">
-                    <h1>Ny opskrift</h1>
-                    <h2>med vores mango sirup</h2>
-                    <button className="button-56"> Tjek den ud</button>
-                  </div>
+            <div style={{ zIndex: 2 }}>
+              <div>
+                <img style={bgImg} alt="Wow" src={slideinfo1} />
+                <div className="slidetitle">
+                  <h1>Ny opskrift</h1>
+                  <h2>med vores mango sirup</h2>
+                  <button className="button-56"> Tjek den ud</button>
                 </div>
               </div>
+            </div>
 
-              <div style={{ zIndex: 2 }}>
-                <div>
-                  <img style={bgImg} alt="Wow" src={slideinfo3} />
-                  <h1>Nyt Event</h1>
-                  <h2>Ses vi til Aarhus fest uge</h2>
-                  <button className="button-56"> Tjek Event her </button>
-                </div>
+            <div style={{ zIndex: 2 }}>
+              <div>
+                <img style={bgImg} alt="Wow" src={slideinfo3} />
+                <h1>Nyt Event</h1>
+                <h2>Ses vi til Aarhus fest uge</h2>
+                <button className="button-56"> Tjek Event her </button>
               </div>
-            </AwesomeSlider>
-          </div>
+            </div>
+          </AwesomeSlider>
+        </div>
 
-          <div>
-            <ElfsightWidget widgetID="57a3de4c-6be9-46a4-9366-453a0fe3eafb" />
-          </div>
+        <div className="column3">
+          <ElfsightWidget widgetID="57a3de4c-6be9-46a4-9366-453a0fe3eafb" />
         </div>
       </div>
+
       <br></br>
       <br></br>
       <br></br>
