@@ -3,6 +3,15 @@ import { Box } from "@mui/system";
 import React from "react";
 import { useUserContext } from "../context/userContext";
 import LoginNav from "../components/LoginNav";
+import DisplayProducts from "../components/DisplayProducts";
+
+const ContainerStyle = {
+  minHeight: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  gap: "var(--Gap)",
+};
 
 const UserProducts = () => {
   const { user } = useUserContext();
@@ -21,7 +30,30 @@ const UserProducts = () => {
         <Typography variant="h6">Email : {user.email}</Typography>
       </Box>
       <LoginNav />
-      <Box>hahaha</Box>
+      <Box sx={ContainerStyle}>
+        {" "}
+        <Typography className="test" sx={{ fontSize: 40 }}>
+          Tilføj eller fjern produkter her!
+        </Typography>
+        <Box
+          sx={{
+            m: 1,
+            display: "flex",
+            borderRadius: "26px",
+            pb: "calc(var(--addbtnSize) + 10%)",
+          }}
+        >
+          <DisplayProducts />
+        </Box>
+        <Box
+          sx={{
+            m: 1,
+            display: "flex",
+            borderRadius: "26px",
+            pb: "calc(var(--addbtnSize) + 10%)",
+          }}
+        ></Box>
+      </Box>
     </Box>
   );
 };
