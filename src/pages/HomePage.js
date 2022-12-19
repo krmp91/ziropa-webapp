@@ -10,10 +10,6 @@ import  slideinfo3 from "../components/assets/slide3.JPG";
 import packageInfo from "../components/assets/orangecocktail1.jpg";
 import packageInfo1 from "../components/assets/imgprodukter.JPG";
 import packageInfo2 from "../components/assets/imgprodukter1.JPG";
-import slideinfo1 from "../components/assets/slide1.jpeg";
-import slideinfo2 from "../components/assets/slide2.jpeg";
-import slideinfo3 from "../components/assets/slide3.JPG";
-
 import { Link } from "react-router-dom";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
