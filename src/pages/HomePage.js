@@ -55,7 +55,7 @@ export default function HomePage() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "24% 49% 24%",
+            gridTemplateColumns: "20% 49% 28%",
             gridGap: 20,
             justifyContent: "",
           }}
@@ -73,6 +73,7 @@ export default function HomePage() {
 
           {/* column mid */}
           <div>
+          
             <AwesomeSlider
               organicArrows={false}
               buttonContentRight={<p style={buttonStyle}>{">"}</p>}
@@ -82,48 +83,38 @@ export default function HomePage() {
               cancelOnInteraction={false} // should stop playing on user interaction
               interval={6000}
             >
-              <div style={{ zIndex: 2 }}>
-                <div>
-                  <img style={bgImg} alt="Wow" src={slideinfo1} />
-                  <h1>Microsoft</h1>
-                  <h2>Nice to see you</h2>
-                  <button className="button-56"> Click Me </button>
-                </div>
-              </div>
-            </AwesomeSlider>
-            <AwesomeSlider
-              organicArrows={false}
-              buttonContentRight={<p style={buttonStyle}>{">"}</p>}
-              buttonContentLeft={<p style={buttonStyle}>{"<"}</p>}
-              play
-              // customContent={<p style={contentStyle}>{"I am the content/text"}</p>}
-              cancelOnInteraction={false} // should stop playing on user interaction
-              interval={6000}
-            >
-              <div style={{ zIndex: 2 }}>
-                <div>
-                  <img style={bgImg} alt="Wow" src={slideinfo1} />
-                  <h1>Microsoft</h1>
-                  <h2>Nice to see you</h2>
-                  <button className="button-56"> Click Me </button>
-                </div>
-              </div>
 
               <div style={{ zIndex: 2 }}>
                 <div>
                   <img style={bgImg} alt="Wow" src={slideinfo2} />
-                  <h1>Microsoft</h1>
-                  <h2>Nice to see you</h2>
-                  <button className="button-56"> Click Me </button>
+                  <div className="slidetitle1">
+                  <h1>Pumpkin Latte Opskrift</h1>
+                  <h2>Holder dig varm</h2>
+                  <button className="button-56"> Tjek her </button>
+                  </div>
                 </div>
               </div>
+
+
+              <div style={{ zIndex: 2 }}>
+                <div>
+                  <img style={bgImg} alt="Wow" src={slideinfo1} />
+                  <div className="slidetitle">
+                  <h1>Ny opskrift</h1>
+                  <h2>med vores mango sirup</h2>
+                  <button className="button-56"> Tjek den ud</button>
+                  </div>
+                </div>
+              </div>
+
+              
 
               <div style={{ zIndex: 2 }}>
                 <div>
                   <img style={bgImg} alt="Wow" src={slideinfo3} />
-                  <h1>Microsoft</h1>
-                  <h2>Nice to see you</h2>
-                  <button className="button-56"> Click Me </button>
+                  <h1>Nyt Event</h1>
+                  <h2>Ses vi til Aarhus fest uge</h2>
+                  <button className="button-56"> Tjek Event her </button>
                 </div>
               </div>
             </AwesomeSlider>
