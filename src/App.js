@@ -3,6 +3,8 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
 import NewsPage from "./pages/NewsPage";
+import NewsPage1 from "./pages/NewsPage1";
+import NewsPage2 from "./pages/NewsPage2";
 import EventsPage from "./pages/EventsPage";
 import RecipePage from "./pages/RecipePage";
 import AboutPage from "./pages/AboutPage";
@@ -31,6 +33,8 @@ function App() {
           <Route path="*" element={<HomePage to="/" />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/news" element={<NewsPage />} />
+          <Route path="/news1" element={<NewsPage1 />} />
+          <Route path="/news2" element={<NewsPage2 />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/inspiration" element={<RecipePage />} />
           <Route path="/about" element={<AboutPage />} />
