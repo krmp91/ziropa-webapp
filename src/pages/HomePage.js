@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/captioned.css";
-import Footer from "rc-footer";
+import Footer from "../components/Footer";
 import "rc-footer/assets/index.css"; // import 'rc-footer/asssets/index.less';
 import { GoLocation } from "react-icons/go";
 import { BsFacebook } from "react-icons/bs";
@@ -112,6 +112,8 @@ export default function HomePage() {
       <br></br>
       <br></br>
       <br></br>
+
+      <Footer />
       {/* <Footer
         id="footer"
         style={fot}
