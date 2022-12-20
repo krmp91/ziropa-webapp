@@ -10,6 +10,8 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { BiUser } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
+// Kasper
+
 const DrawerMenu = () => {
   const [open, setOpen] = useState(false);
 

@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { useUserContext } from "../context/userContext";
 
+//Kasper
+
 const SignUp = () => {
   const emailRef = useRef();
   const nameRef = useRef();

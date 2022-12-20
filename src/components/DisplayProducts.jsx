@@ -5,6 +5,8 @@ import React, { useEffect, useState } from "react";
 import { db } from "../firebase";
 import DeleteProducts from "./DeleteProducts";
 
+//Kasper
+
 export default function Products() {
   const [products, setProducts] = useState([]);
   useEffect(() => {

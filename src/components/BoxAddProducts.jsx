@@ -7,6 +7,8 @@ import Modal from "@mui/material/Modal";
 import AddProducts from "./AddProducts";
 import "../App.css";
 
+//Kasper
+
 const style3 = {
   color: "var(--addBtnColor)",
   width: "var(--addbtnSize)",

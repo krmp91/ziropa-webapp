@@ -6,6 +6,8 @@ import LoginNav from "../components/LoginNav";
 import DisplayProducts from "../components/DisplayProducts";
 import BoxAddProducts from "../components/BoxAddProducts";
 
+//Kasper
+
 const ContainerStyle = {
   minHeight: "100vh",
   display: "flex",
