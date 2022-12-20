@@ -3,6 +3,16 @@ import { Box } from "@mui/system";
 import React from "react";
 import { useUserContext } from "../context/userContext";
 import LoginNav from "../components/LoginNav";
+import DisplayRecipe from "../components/DisplayRecipe";
+import BoxAddRecipe from "../components/BoxAddRecipe";
+
+const ContainerStyle = {
+  minHeight: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  gap: "var(--Gap)",
+};
 
 const UserInspiration = () => {
   const { user } = useUserContext();
@@ -21,7 +31,31 @@ const UserInspiration = () => {
         <Typography variant="h6">Email : {user.email}</Typography>
       </Box>
       <LoginNav />
-      <Box>hahaha!!!</Box>
+      <Box sx={ContainerStyle}>
+        {" "}
+        <Typography className="test" sx={{ p: 2, fontSize: 40 }}>
+          Tilføj eller fjern opskrifter her!
+        </Typography>
+        <Box
+          sx={{
+            m: 1,
+            display: "flex",
+            borderRadius: "26px",
+            pb: "calc(var(--addbtnSize) + 10%)",
+          }}
+        >
+          <DisplayRecipe />
+        </Box>
+        <Box
+          sx={{
+            m: 1,
+            display: "flex",
+            borderRadius: "26px",
+            pb: "calc(var(--addbtnSize) + 10%)",
+          }}
+        ></Box>
+        <BoxAddRecipe />
+      </Box>
     </Box>
   );
 };

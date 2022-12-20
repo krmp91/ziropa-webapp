@@ -7,11 +7,12 @@ import { Button, TextField, Typography, Container } from "@mui/material";
 import "./AddProducts.css";
 import { Box } from "@mui/system";
 
-export default function AddProducts() {
+export default function AddRecipe() {
   const [formData, setFormData] = useState({
     title: "",
+    comment: "",
     description: "",
-    price: "",
+    recipe: "",
     image: "",
     createdAt: Timestamp.now().toDate(),
   });
@@ -29,8 +30,9 @@ export default function AddProducts() {
   const handleCreateProducts = () => {
     if (
       !formData.title ||
+      !formData.comment ||
       !formData.description ||
-      !formData.price ||
+      !formData.recipe ||
       !formData.image
     ) {
       alert("Please fill all the fields");
@@ -58,8 +60,9 @@ export default function AddProducts() {
       () => {
         setFormData({
           title: "",
+          comment: "",
           description: "",
-          price: "",
+          recipe: "",
           image: "",
         });
 
@@ -68,7 +71,7 @@ export default function AddProducts() {
           addDoc(productRef, {
             title: formData.title,
             description: formData.description,
-            price: formData.price,
+            recipe: formData.recipe,
             imageUrl: url,
             createdAt: Timestamp.now().toDate(),
           })
@@ -108,15 +111,49 @@ export default function AddProducts() {
           p: 2,
         }}
       >
+        {/*title on drink*/}
         <Box sx={{ py: 1 }}>
           <TextField
             sx={{ minWidth: "100%" }}
             id="outlined-textarea"
-            label="Produktets navn"
+            label="Title til opskrift"
             name="title"
             multiline
             defaultValue="Normal"
             value={formData.title}
+            InputLabelProps={{
+              shrink: true,
+            }}
+            onChange={(e) => handleChange(e)}
+          />
+        </Box>
+        {/*comment to title*/}
+        <Box sx={{ py: 1 }}>
+          <TextField
+            sx={{ minWidth: "100%" }}
+            id="outlined-textarea"
+            label="Kommentar til opskrift"
+            name="comment"
+            multiline
+            defaultValue="Normal"
+            value={formData.title}
+            InputLabelProps={{
+              shrink: true,
+            }}
+            onChange={(e) => handleChange(e)}
+          />
+        </Box>
+        {/*recipe*/}
+        <Box sx={{ py: 1 }}>
+          <TextField
+            sx={{ minWidth: "100%" }}
+            id="outlined-textarea"
+            label="Opskrift"
+            name="recipe"
+            multiline
+            defaultValue="Normal"
+            rows={4}
+            value={formData.description}
             InputLabelProps={{
               shrink: true,
             }}
@@ -128,7 +165,7 @@ export default function AddProducts() {
           <TextField
             sx={{ minWidth: "100%" }}
             id="outlined-textarea"
-            label="Beskrivelse"
+            label="Fremgangsmetode"
             name="description"
             multiline
             defaultValue="Normal"
@@ -140,20 +177,7 @@ export default function AddProducts() {
             onChange={(e) => handleChange(e)}
           />
         </Box>
-        {/* price */}
-        <Box sx={{ py: 1 }}>
-          <TextField
-            className="form-control"
-            type="number"
-            label="Pris"
-            name="price"
-            value={formData.price}
-            InputLabelProps={{
-              shrink: true,
-            }}
-            onChange={(e) => handleChange(e)}
-          />
-        </Box>
+
         {/* image */}
         <Box sx={{ py: 1 }}>
           <TextField

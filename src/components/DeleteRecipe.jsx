@@ -7,7 +7,7 @@ import { Button } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 // Kasper
-export default function DeleteProduct({ id, imageUrl }) {
+export default function DeleteRecipe({ id, imageUrl }) {
   const handleDelete = async () => {
     if (window.confirm("Are you sure you want to delete this article?")) {
       try {
