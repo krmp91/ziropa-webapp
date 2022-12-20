@@ -35,7 +35,6 @@ function App() {
             <Route path="/addProducts" element={<UserProducts />} />
           </Route>
         </Routes>
-        <Footer />
       </main>
     </>
   );

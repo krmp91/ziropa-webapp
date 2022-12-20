@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import Footer from "../components/Footer";
 
 const About = () => {
   const [toggleTab, setToggleTab] = useState(1);
@@ -67,7 +68,7 @@ const About = () => {
                 }
               >
                 <h2>Den gode smag til de gode stunder</h2>
-                <p>
+                <p style={{ color: "black" }}>
                   Hos Ziropa sirup er vi drevet af en passion for sirup, men
                   helt grundlæggende ligger vores kærlighed inden for de
                   naturlige råvarer. Vi tror på, at sirup og fødevarer generelt
@@ -79,6 +80,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </Fragment>
   );
 };

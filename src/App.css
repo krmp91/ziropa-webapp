@@ -45,6 +45,18 @@
   --navBGcolor: rgba(0, 0, 0, 0.8);
   --iconColor: rgba(250, 250, 250, 1);
 }
+html,
+body,
+#root {
+  position: relative;
+  height: 100%;
+}
+
+main {
+  margin: 0 auto;
+
+  min-height: calc(100vh - 96px - 334px);
+}
 
 .bg-main {
   height: auto;
@@ -465,4 +477,10 @@
   background-position: center center;
   height: 550px;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    height: auto;
+  }
 }

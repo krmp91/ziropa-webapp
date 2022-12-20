@@ -5,6 +5,7 @@ import { useUserContext } from "../context/userContext";
 import LoginNav from "../components/LoginNav";
 import DisplayRecipe from "../components/DisplayRecipe";
 import BoxAddRecipe from "../components/BoxAddRecipe";
+import Footer from "../components/Footer";
 
 //Kasper
 
@@ -57,6 +58,7 @@ const UserInspiration = () => {
           }}
         ></Box>
         <BoxAddRecipe />
+        <Footer />
       </Box>
     </Box>
   );

@@ -3,10 +3,11 @@ import packageInfo1 from "../components/assets/nyhed1.jpeg";
 import packageInfo2 from "../components/assets/nyhed2.jpeg";
 import loremimg from "../components/assets/footimg1.png";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 export default function NewsPage() {
   return (
-    <div style={{ height: "80vh" }}>
+    <div style={{ height: "100vh" }}>
       <div class="menu">
         <div class="food-items">
           <img src={packageInfo1}></img>
@@ -108,6 +109,7 @@ export default function NewsPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

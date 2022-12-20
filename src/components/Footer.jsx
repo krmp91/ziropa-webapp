@@ -8,15 +8,14 @@ import footimg from "../components/assets/footimg.png";
 import "../App.css";
 
 const fot = {
-  position: "relative",
-  left: "0",
+  minWidth: "100%",
   bottom: "0",
-  right: "0",
   fontSize: "20px",
 };
 const FooterContact = () => {
   return (
     <Footer
+      className="footer"
       style={fot}
       columns={[
         {

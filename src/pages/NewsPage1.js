@@ -1,9 +1,10 @@
 import React, { Fragment, useState } from "react";
+import Footer from "../components/Footer";
 
 export default function NewsPage1() {
   return (
     <Fragment>
-      <section className="about" style={{ height: "66vh" }}>
+      <section className="about" style={{ height: "70vh" }}>
         <div className="row">
           <div className="column">
             <div className="news1"></div>
@@ -52,6 +53,7 @@ export default function NewsPage1() {
           </div>
         </div>
       </section>
+      <Footer />
     </Fragment>
   );
 }

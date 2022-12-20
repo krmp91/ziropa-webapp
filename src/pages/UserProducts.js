@@ -5,6 +5,7 @@ import { useUserContext } from "../context/userContext";
 import LoginNav from "../components/LoginNav";
 import DisplayProducts from "../components/DisplayProducts";
 import BoxAddProducts from "../components/BoxAddProducts";
+import Footer from "../components/Footer";
 
 //Kasper
 
@@ -57,6 +58,7 @@ const UserProducts = () => {
           }}
         ></Box>
         <BoxAddProducts />
+        <Footer />
       </Box>
     </Box>
   );

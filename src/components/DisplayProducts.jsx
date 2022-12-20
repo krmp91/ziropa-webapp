@@ -31,9 +31,9 @@ export default function Products() {
           ({ id, title, description, price, imageUrl, createdAt }) => (
             <Box
               sx={{
-                m: 2,
+                m: 0,
                 mt: 2,
-                p: 3,
+                p: 1,
                 pb: 3,
                 backgroundColor: "hsl(0, 0%, 0%, 0.40)",
                 borderRadius: "6px",
@@ -50,7 +50,7 @@ export default function Products() {
                   <img
                     src={imageUrl}
                     alt="title"
-                    style={{ height: 246, paddingTop: "15px" }}
+                    style={{ height: 240, paddingTop: "15px" }}
                   />
                 </div>
                 <Box sx={{ display: "flex", flexDirection: "column" }}>
