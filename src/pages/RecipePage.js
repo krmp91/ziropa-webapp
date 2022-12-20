@@ -1,9 +1,10 @@
 import React from "react";
+import ShowRecipe from "../components/ShowRecipe";
 
 export default function RecipePage() {
   return (
-    <div>
-      <h1>Opskriter her !</h1>
+    <div style={{ position: "relative", height: "70vh" }}>
+      <ShowRecipe />
     </div>
   );
 }

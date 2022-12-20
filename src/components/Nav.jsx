@@ -10,7 +10,6 @@ import { BiUser } from "react-icons/bi";
 import DrawerMenu from "./DrawerMenu";
 import { Link } from "react-router-dom";
 import "./Nav.css";
-import orangecocktail1 from "../components/assets/orangecocktail1.jpg";
 
 //Kasper
 
