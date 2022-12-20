@@ -32,7 +32,7 @@ const style1 = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "80%",
-  height: "70%",
+  height: "80%",
   backgroundColor: "var(--bgColor)",
   border: "2px solid #000",
   boxShadow: 24,

@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useEffect, useState } from "react";
 import { db } from "../firebase";
+import DeleteProducts from "./DeleteProducts";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
@@ -27,22 +28,18 @@ export default function Products() {
         products.map(({ id, title, description, imageUrl, createdAt }) => (
           <Box
             sx={{
-              m: 1,
+              m: 2,
               mt: 2,
-              p: 1,
+              p: 3,
               pb: 3,
               backgroundColor: "hsl(0, 0%, 0%, 0.40)",
-              borderRadius: "26px",
-
-              maxWidth: "85vw",
+              borderRadius: "6px",
             }}
             key={id}
           >
             <div>
               <div
                 style={{
-                  ml: "auto",
-                  mr: "auto",
                   display: "flex",
                   justifyContent: "center",
                 }}
@@ -50,13 +47,13 @@ export default function Products() {
                 <img
                   src={imageUrl}
                   alt="title"
-                  style={{ height: 180, paddingTop: "15px" }}
+                  style={{ height: 246, paddingTop: "15px" }}
                 />
               </div>
-              <Box>
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <Typography
                   sx={{
-                    fontSize: "var(--H2size)",
+                    fontSize: "var(--H3size)",
                     textDecoration: "bold",
                     pt: 1,
                     color: "whitesmoke",
@@ -66,9 +63,9 @@ export default function Products() {
                 </Typography>
 
                 <Typography
-                  variant="p"
+                  variant="body2"
                   sx={{
-                    fontSize: 15,
+                    fontSize: 20,
                     pt: 2,
                     pb: "22px",
                     color: "whitesmoke",
@@ -76,7 +73,6 @@ export default function Products() {
                 >
                   {description}
                 </Typography>
-                <div className="typoGroup"></div>
 
                 <Typography
                   variant="p"
@@ -84,6 +80,7 @@ export default function Products() {
                 >
                   Produkt oprettet: {createdAt.toDate().toDateString()} <br />
                 </Typography>
+                <DeleteProducts />
               </Box>
             </div>
           </Box>

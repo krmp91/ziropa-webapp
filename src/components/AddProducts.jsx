@@ -11,7 +11,6 @@ export default function AddProducts() {
   const [formData, setFormData] = useState({
     title: "",
     description: "",
-
     image: "",
     createdAt: Timestamp.now().toDate(),
   });
@@ -54,13 +53,12 @@ export default function AddProducts() {
         setFormData({
           title: "",
           description: "",
-
           image: "",
         });
 
         getDownloadURL(uploadImage.snapshot.ref).then((url) => {
-          const titleRef = collection(db, "Produckts");
-          addDoc(titleRef, {
+          const productRef = collection(db, "Products");
+          addDoc(productRef, {
             title: formData.title,
             description: formData.description,
             imageUrl: url,
@@ -167,7 +165,6 @@ export default function AddProducts() {
             backgroundColor: "var(--addBtnBGColor)",
             marginTop: 1,
           }}
-          className="form-control-btn"
           onClick={handleCreateProducts}
         >
           Tilføj Produkt
