@@ -53,14 +53,23 @@
 }
 
 .backgroundHome {
-  max-width: 100%;
+  /* position: relative;
   height: auto;
   left: 0px;
   right: 0px;
+  max-width: 100%;
+  
+  z-index: -1; */
+  width: 100vw;
   position: relative;
-  bottom: 120px;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  bottom: 110px;
   z-index: -1;
 }
+
 .backgroundHome1 {
   max-width: 100%;
   height: auto;
