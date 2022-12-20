@@ -7,7 +7,7 @@ import LoginNav from "./LoginNav";
 const LoginPage = () => {
   const { user } = useUserContext();
   return (
-    <Box sx={{ minWidth: "100%" }}>
+    <Box sx={{ height: "70vh", minWidth: "100%" }}>
       <Box
         sx={{
           padding: 2,
