@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 
+//Kasper
 const Auth = () => {
   const [index, setIndex] = useState(false);
   const toggleIndex = () => {
@@ -13,9 +14,11 @@ const Auth = () => {
       {!index ? <SignIn /> : <SignUp />}
       <p onClick={toggleIndex}>
         {!index ? (
-          <Button> Ny bruger?</Button>
+          <Button sx={{ color: "var(--addBtnBGColor)" }}> Ny bruger?</Button>
         ) : (
-          <Button>Allerede oprettet?</Button>
+          <Button sx={{ color: "var(--addBtnBGColor)" }}>
+            Allerede oprettet?
+          </Button>
         )}
       </p>
     </div>

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Component } from "react";
 import packageInfo from "../components/assets/orangecocktail1.jpg";
 import packageInfo1 from "../components/assets/imgprodukter.JPG";
 import packageInfo2 from "../components/assets/imgprodukter1.JPG";
@@ -23,7 +22,7 @@ import { ElfsightWidget } from "react-elfsight-widget";
 const buttonStyle = {
   padding: "15px",
   borderRadius: "50%",
-  background: "#A7915E",
+  background: "#5f4731",
   opacity: 0.7,
   fontSize: "20px",
 };

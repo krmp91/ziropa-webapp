@@ -9,7 +9,7 @@
 
 :root {
   /* Modals */
-  --btnColor: #a7915e;
+  --btnColor: rgba(95, 71, 49, 0.918);
   --border: 2px solid#161616d2;
   --bgColor: rgba(245, 218, 196, 0.829);
   --BgPop: hsl(0, 0%, 0%, 1.4);
@@ -53,20 +53,14 @@
     url(./components/assets/bgimg-main.jpg);
 }
 
-.login {
-  float: right;
-  position: relative;
-  bottom: 75px;
-}
-
 .backgroundHome {
   position: relative;
   height: auto;
   left: 0px;
   right: 0px;
   width: 100%;
-  z-index: 1; 
-  
+  bottom: 7em;
+  z-index: 1;
 }
 
 .backgroundHome1 {
@@ -148,7 +142,6 @@
 /* css for om os */
 .about {
   padding: 6rem 3rem 5rem 3rem;
-  background: #f8f8f8;
 }
 .row {
   display: flex;
@@ -193,7 +186,7 @@
   display: block;
 }
 .active-tab {
-  background: #a7915e;
+  background: #796858;
   position: relative;
 }
 .active-tab::before {
@@ -206,7 +199,7 @@
   height: 0;
   border-style: solid;
   border-width: 5px 5px 0 5px;
-  border-color: #a7915e transparent transparent transparent;
+  border-color: #796858 transparent transparent transparent;
 }
 .active-tab h2 {
   color: white;
@@ -441,7 +434,7 @@
 }
 
 .details > a button {
-  background-color: #a7915e;
+  background-color: #796858;
   border: none;
   color: #ffffff;
   font-size: 16px;

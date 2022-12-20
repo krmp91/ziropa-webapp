@@ -4,8 +4,9 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { storage, db } from "../firebase";
 import { toast } from "react-toastify";
 import { Button, TextField, Typography, Container } from "@mui/material";
-import "./AddProducts.css";
 import { Box } from "@mui/system";
+
+//Kasper
 
 export default function AddProducts() {
   const [formData, setFormData] = useState({

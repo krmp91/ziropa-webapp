@@ -10,6 +10,9 @@ import { BiUser } from "react-icons/bi";
 import DrawerMenu from "./DrawerMenu";
 import { Link } from "react-router-dom";
 import "./Nav.css";
+import orangecocktail1 from "../components/assets/orangecocktail1.jpg";
+
+//Kasper
 
 export default function Nav() {
   const [value, setValue] = useState();
@@ -131,8 +134,8 @@ export default function Nav() {
                   <Tab
                     label="Kontakt"
                     component={Link}
-                    to="/Contact"
-                    value="/Contact"
+                    to="/contact"
+                    value="/contact"
                   />
                 </Tabs>
               </Grid>
