@@ -11,59 +11,54 @@ const fot = {
 };
 const FooterContact = () => {
   return (
-    <Footer
-      id="footer"
-      style={fot}
-      columns={[
-        {
-          title: "Kontakt os",
-          items: [
-            {
-              title: "Kontakt os",
-              items: [
-                {
-                  icon: <GoLocation />,
-                  title: "Universitetsbyen 14, 8000 Aarhus",
-                  openExternal: true,
-                },
-                {
-                  icon: <AiOutlineMail />,
-                  title: "info@ziropasirup.dk",
-                  openExternal: true,
-                },
-                {
-                  icon: <AiOutlinePhone />,
-                  title: "+4529130223",
-                },
-              ],
-            },
-            {
-              icon: <AiOutlinePhone />,
-              title: "+4529130223",
-            },
-          ],
-        },
-        {
-          title: "Følg os",
-          items: [
-            {
-              icon: <BsFacebook />,
-              title: "Facebook",
-              url: "https://www.facebook.com/ziropasirup",
-              openExternal: true,
-            },
-            {
-              icon: <BsInstagram />,
-              title: "Instagram",
-              url: "https://mobile.ant.design/",
-              openExternal: true,
-            },
-          ],
-        },
-      ]}
-      img
-      src={footimg}
-    />
+    <Footer 
+style={fot}
+    columns={[
+      
+      {
+        
+        title: 'Kontakt os',
+        items: [
+          {
+            icon: <GoLocation/>,
+            title: 'Universitetsbyen 14, 8000 Aarhus',
+            openExternal: true,
+          },
+          {
+            icon: <AiOutlineMail/>,
+            title: 'info@ziropasirup.dk',
+            openExternal: true,
+          },
+          {
+            icon: <AiOutlinePhone/>,
+            title: '+4529130223',
+          },
+        ],
+      },
+      {
+        title: 'Følg os',
+        items: [
+          {
+            icon: <BsFacebook/>, 
+            title:"Facebook",
+            url: 'https://www.facebook.com/ziropasirup',
+            openExternal: true,
+          },
+          {
+            icon:<BsInstagram/>,
+            title: 'Instagram',
+            url: 'https://mobile.ant.design/',
+            openExternal: true,
+        
+          }
+         
+        ],
+      },
+      
+    ]}
+    
+   
+  />
   );
 };
 
