@@ -14,6 +14,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Nav from "./components/Nav";
 import UserInspiration from "./pages/UserInspiration";
 import UserProducts from "./pages/UserProducts";
+import Footer from "./components/Footer";
 
 /*"Hjem",
   "Produkter",
@@ -43,6 +44,7 @@ function App() {
           <Route path="/addProducts" element={<UserProducts />} />
         </Route>
       </Routes>
+      <Footer />
     </>
   );
 }

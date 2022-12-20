@@ -39,9 +39,9 @@ const bgImg = {
   width: "100%",
 };
 
-const fot = {
-  fontSize: "20px",
-};
+// const fot = {
+//   fontSize: "20px",
+// };
 
 export default function HomePage() {
   return (
@@ -113,7 +113,8 @@ export default function HomePage() {
       <br></br>
       <br></br>
       <br></br>
-      <Footer
+      {/* <Footer
+        id="footer"
         style={fot}
         columns={[
           {
@@ -164,7 +165,7 @@ export default function HomePage() {
         ]}
         img
         src={packageInfo3}
-      />
+      /> */}
     </html>
   );
 }
