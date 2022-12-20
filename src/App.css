@@ -60,21 +60,13 @@
 }
 
 .backgroundHome {
-  /* position: relative;
+  position: relative;
   height: auto;
   left: 0px;
   right: 0px;
-  max-width: 100%;
+  width: 100%;
+  z-index: 1; 
   
-  z-index: -1; */
-  width: 100vw;
-
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  bottom: 110px;
 }
 
 .backgroundHome1 {
