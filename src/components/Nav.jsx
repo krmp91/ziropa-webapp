@@ -22,7 +22,7 @@ export default function Nav() {
     <>
       <AppBar
         sx={{
-          position: "static",
+          position: "sticky",
           background: "rgba(95,71,49,0.6183648459383753)",
           height: "6.5em",
           justifyContent: "center",

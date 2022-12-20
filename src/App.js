@@ -15,6 +15,7 @@ import Nav from "./components/Nav";
 import UserInspiration from "./pages/UserInspiration";
 import UserProducts from "./pages/UserProducts";
 import Footer from "./components/Footer";
+import "./App.css";
 
 /*"Hjem",
   "Produkter",
@@ -26,25 +27,27 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Nav />
-      <Routes>
-        <Route>
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/" element={<Navigate replace to="/home" />} />
-          <Route path="*" element={<HomePage to="/" />} />
-          <Route path="/products" element={<ProductsPage />} />
-          <Route path="/news" element={<NewsPage />} />
-          <Route path="/news1" element={<NewsPage1 />} />
-          <Route path="/news2" element={<NewsPage2 />} />
-          <Route path="/events" element={<EventsPage />} />
-          <Route path="/inspiration" element={<RecipePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/addInspiration" element={<UserInspiration />} />
-          <Route path="/addProducts" element={<UserProducts />} />
-        </Route>
-      </Routes>
-      <Footer />
+      <main className="bg-main">
+        <Nav />
+        <Routes>
+          <Route>
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/" element={<Navigate replace to="/home" />} />
+            <Route path="*" element={<HomePage to="/" />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/news" element={<NewsPage />} />
+            <Route path="/news1" element={<NewsPage1 />} />
+            <Route path="/news2" element={<NewsPage2 />} />
+            <Route path="/events" element={<EventsPage />} />
+            <Route path="/inspiration" element={<RecipePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/addInspiration" element={<UserInspiration />} />
+            <Route path="/addProducts" element={<UserProducts />} />
+          </Route>
+        </Routes>
+        <Footer />
+      </main>
     </>
   );
 }
