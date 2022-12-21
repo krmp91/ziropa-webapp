@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 export default function NewsPage() {
   return (
-    <div style={{ height: "100vh" }}>
+    <div style={{ height: "100%" }}>
       <div class="menu">
         <div class="food-items">
           <img src={packageInfo1}></img>
@@ -109,6 +109,10 @@ export default function NewsPage() {
           </div>
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <Footer />
     </div>
   );
