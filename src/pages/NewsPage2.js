@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export default function NewsPage2() {
   return (
     <Fragment>
-      <section className="about" style={{ height: "70vh" }}>
+      <section className="about" style={{ height: "100%" }}>
         <div className="row">
           <div className="column">
             <div className="news2"></div>
