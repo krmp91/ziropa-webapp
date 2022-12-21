@@ -8,7 +8,7 @@ const About = () => {
   };
   return (
     <Fragment>
-      <section className="about" style={{ height: "70vh" }}>
+      <section className="about" style={{ height: "100%" }}>
         <div className="row">
           <div className="column">
             <div className="about-img"></div>
@@ -82,7 +82,9 @@ const About = () => {
       </section>
       <Footer />
     </Fragment>
+     
   );
+  
 };
 
 export default About;
