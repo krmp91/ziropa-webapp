@@ -48,7 +48,7 @@ export default function DisplayRecipe() {
               }}
               key={id}
             >
-              <div>
+              <div style={{ width: "280px" }}>
                 <div
                   style={{
                     display: "flex",
@@ -64,7 +64,7 @@ export default function DisplayRecipe() {
                 <Box sx={{ display: "flex", flexDirection: "column" }}>
                   <Typography
                     sx={{
-                      fontSize: "var(--H3size)",
+                      fontSize: 24,
                       textDecoration: "bold",
                       pt: 1,
                       color: "whitesmoke",
@@ -75,7 +75,7 @@ export default function DisplayRecipe() {
                   <Typography
                     variant="body2"
                     sx={{
-                      fontSize: 20,
+                      fontSize: 18,
                       pt: 2,
                       pb: "22px",
                       color: "whitesmoke",
@@ -86,18 +86,7 @@ export default function DisplayRecipe() {
                   <Typography
                     variant="body2"
                     sx={{
-                      fontSize: 20,
-                      pt: 2,
-                      pb: "22px",
-                      color: "whitesmoke",
-                    }}
-                  >
-                    {description}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      fontSize: 20,
+                      fontSize: 16,
                       pt: 2,
                       pb: "22px",
                       color: "whitesmoke",
@@ -105,6 +94,20 @@ export default function DisplayRecipe() {
                   >
                     {recipe}
                   </Typography>
+                  <Typography
+                    variant="body2"
+                    sx={{
+                      fontSize: 16,
+                      pt: 2,
+                      pb: "22px",
+                      color: "whitesmoke",
+                      width: "280px",
+                      whiteSpace: "pre-line",
+                    }}
+                  >
+                    {description}
+                  </Typography>
+
                   <Typography
                     variant="p"
                     sx={{ fontSize: 14, mb: 2, color: "whitesmoke" }}

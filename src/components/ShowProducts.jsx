@@ -1,5 +1,5 @@
 import { collection, onSnapshot, orderBy, query } from "@firebase/firestore";
-import { Typography } from "@mui/material";
+import { Typography, Button } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useEffect, useState } from "react";
 import { db } from "../firebase";
@@ -31,7 +31,6 @@ export default function ShowProducts() {
           <Box
             sx={{
               display: "flex",
-              width: "300px",
               m: 2,
               mt: 2,
               p: 3,
@@ -100,6 +99,19 @@ export default function ShowProducts() {
                 >
                   {price} DKK <br />
                 </Typography>
+                <Box sx={{ display: "flex", justifyContent: "center" }}>
+                  <Button
+                    onClick={() => alert("Tak for handlen")}
+                    sx={{
+                      border: "var(--addBtnBorder)",
+                      backgroundColor: "rgba(95, 71, 49, 0.918)",
+                      color: "white",
+                      width: "130px",
+                    }}
+                  >
+                    Køb
+                  </Button>
+                </Box>
               </Box>
             </div>
           </Box>

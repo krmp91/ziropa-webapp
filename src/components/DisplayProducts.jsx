@@ -32,7 +32,7 @@ export default function Products() {
             <Box
               sx={{
                 display: "flex",
-                width: "300px",
+
                 m: 0,
                 mt: 2,
                 p: 2,
@@ -47,7 +47,6 @@ export default function Products() {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    alignSelf: "center",
                   }}
                 >
                   <img

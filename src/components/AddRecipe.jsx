@@ -12,8 +12,8 @@ export default function AddRecipe() {
   const [formData, setFormData] = useState({
     title: "",
     comment: "",
-    description: "",
     recipe: "",
+    description: "",
     image: "",
     createdAt: Timestamp.now().toDate(),
   });
@@ -32,8 +32,8 @@ export default function AddRecipe() {
     if (
       !formData.title ||
       !formData.comment ||
-      !formData.description ||
       !formData.recipe ||
+      !formData.description ||
       !formData.image
     ) {
       alert("Please fill all the fields");
@@ -62,17 +62,18 @@ export default function AddRecipe() {
         setFormData({
           title: "",
           comment: "",
-          description: "",
           recipe: "",
+          description: "",
           image: "",
         });
 
         getDownloadURL(uploadImage.snapshot.ref).then((url) => {
-          const productRef = collection(db, "Products");
-          addDoc(productRef, {
+          const articleRef = collection(db, "Articles");
+          addDoc(articleRef, {
             title: formData.title,
-            description: formData.description,
+            comment: formData.comment,
             recipe: formData.recipe,
+            description: formData.description,
             imageUrl: url,
             createdAt: Timestamp.now().toDate(),
           })
@@ -137,7 +138,7 @@ export default function AddRecipe() {
             name="comment"
             multiline
             defaultValue="Normal"
-            value={formData.title}
+            value={formData.comment}
             InputLabelProps={{
               shrink: true,
             }}
@@ -154,7 +155,7 @@ export default function AddRecipe() {
             multiline
             defaultValue="Normal"
             rows={4}
-            value={formData.description}
+            value={formData.recipe}
             InputLabelProps={{
               shrink: true,
             }}
