@@ -31,9 +31,11 @@ export default function Products() {
           ({ id, title, description, price, imageUrl, createdAt }) => (
             <Box
               sx={{
+                display: "flex",
+                width: "300px",
                 m: 0,
                 mt: 2,
-                p: 1,
+                p: 2,
                 pb: 3,
                 backgroundColor: "hsl(0, 0%, 0%, 0.40)",
                 borderRadius: "6px",
@@ -45,18 +47,31 @@ export default function Products() {
                   style={{
                     display: "flex",
                     justifyContent: "center",
+                    alignSelf: "center",
                   }}
                 >
                   <img
                     src={imageUrl}
                     alt="title"
-                    style={{ height: 240, paddingTop: "15px" }}
+                    style={{
+                      maxWidth: "240px",
+                      maxHeight: "240px",
+                      paddingTop: "15px",
+                    }}
                   />
                 </div>
-                <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    textSizeAdjust: "auto",
+                  }}
+                >
                   <Typography
                     sx={{
-                      fontSize: "var(--H3size)",
+                      display: "inline-block",
+                      width: "280px",
+                      fontSize: 24,
                       textDecoration: "bold",
                       pt: 1,
                       color: "whitesmoke",
@@ -66,9 +81,9 @@ export default function Products() {
                   </Typography>
 
                   <Typography
-                    variant="body2"
                     sx={{
-                      fontSize: 20,
+                      textSizeAdjust: "auto",
+                      width: "280px",
                       pt: 2,
                       pb: "22px",
                       color: "whitesmoke",
@@ -78,7 +93,12 @@ export default function Products() {
                   </Typography>
                   <Typography
                     variant="body2"
-                    sx={{ fontSize: 14, mb: 2, color: "whitesmoke" }}
+                    sx={{
+                      width: "100%",
+                      fontSize: 14,
+                      mb: 2,
+                      color: "whitesmoke",
+                    }}
                   >
                     {price} DKK <br />
                   </Typography>

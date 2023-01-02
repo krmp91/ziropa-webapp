@@ -30,11 +30,12 @@ export default function ShowProducts() {
         products.map(({ id, title, description, price, imageUrl }) => (
           <Box
             sx={{
+              display: "flex",
+              width: "300px",
               m: 2,
               mt: 2,
               p: 3,
               pb: 3,
-              minWidth: "300px",
               backgroundColor: "rgba(171, 118, 2, 0.5)",
               borderRadius: "6px",
             }}
@@ -51,16 +52,24 @@ export default function ShowProducts() {
                   src={imageUrl}
                   alt="title"
                   style={{
-                    height: "auto",
-                    paddingTop: "15px",
                     maxWidth: "240px",
+                    maxHeight: "240px",
+                    paddingTop: "15px",
                   }}
                 />
               </div>
-              <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  textSizeAdjust: "auto",
+                }}
+              >
                 <Typography
                   sx={{
-                    fontSize: "var(--H3size)",
+                    display: "inline-block",
+                    width: "280px",
+                    fontSize: 24,
                     textDecoration: "bold",
                     pt: 1,
                     color: "whitesmoke",
@@ -70,9 +79,9 @@ export default function ShowProducts() {
                 </Typography>
 
                 <Typography
-                  variant="body2"
                   sx={{
-                    fontSize: 20,
+                    textSizeAdjust: "auto",
+                    width: "280px",
                     pt: 2,
                     pb: "22px",
                     color: "whitesmoke",
@@ -82,7 +91,12 @@ export default function ShowProducts() {
                 </Typography>
                 <Typography
                   variant="body2"
-                  sx={{ fontSize: 14, mb: 2, color: "whitesmoke" }}
+                  sx={{
+                    width: "100%",
+                    fontSize: 14,
+                    mb: 2,
+                    color: "whitesmoke",
+                  }}
                 >
                   {price} DKK <br />
                 </Typography>

@@ -33,14 +33,14 @@ const style1 = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "80%",
-  height: "80%",
+  width: "85%",
+  height: "95%",
   backgroundColor: "var(--bgColor)",
   border: "2px solid #000",
   boxShadow: 24,
-  p: 4,
-  mt: 2,
-  mb: 4,
+  p: 2,
+  mt: 0,
+  mb: 0,
 };
 
 export default function FloatingActionButtons() {
@@ -61,7 +61,7 @@ export default function FloatingActionButtons() {
         aria-describedby="keep-mounted-modal-description"
       >
         <Box sx={style1}>
-          <Typography id="keep-mounted-modal-description" sx={{ mt: 2 }}>
+          <Typography id="keep-mounted-modal-description">
             <AddRecipe />
           </Typography>
         </Box>

@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import Footer from "../components/Footer";
 
 export default function NewsPage1() {
